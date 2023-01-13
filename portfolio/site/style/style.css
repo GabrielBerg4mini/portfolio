@@ -93,8 +93,37 @@ li, a, ul{
 #presentation {
     width: 100%;
     min-height: 100vh;
-    background-color: blue;
+    /* background-color: blue; */
 }
 #about {
-    
+    width: 80%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
 }
+.me-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+}
+.image {
+    width: 65%;
+}
+.text-me{
+    width: 60%;
+    padding-top: 1rem;
+    color: white;
+    padding-right: 5rem;
+    /* background-color: #222222; */
+}
+.tittle2 {
+    
+    font-size: 3rem;
+    color: aliceblue;
+}
+.p2 {
+    text-align: left;
+}
+
