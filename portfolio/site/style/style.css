@@ -54,7 +54,7 @@ li, a, ul{
     width: 100%;
     min-height: 100vh;
     color: white;
-    background-image: url(..);
+    background-image: url(../imgs/first-img.png);
     background-repeat: no-repeat;
     background-position:450% 170% ;
 }
