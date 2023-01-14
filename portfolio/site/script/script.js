@@ -1,2 +1,2 @@
-const menuLinks = document.querySelectorAll('.menu a[href^="#"]');
+const menuLinks = document.querySelectorAll('.menu a');
 console.log(menuLinks)
