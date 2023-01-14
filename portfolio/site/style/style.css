@@ -54,7 +54,7 @@ li, a, ul{
     width: 100%;
     min-height: 100vh;
     color: white;
-    background-image: url(../imgs/first-img.png);
+    background-image: url(..);
     background-repeat: no-repeat;
     background-position:450% 170% ;
 }
@@ -124,4 +124,3 @@ li, a, ul{
     padding-top: 1rem;
     text-align: left;
 } 
-
