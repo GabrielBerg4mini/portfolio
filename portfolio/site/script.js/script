@@ -5,17 +5,17 @@ function getDistanceFromTheTop(element) {
     return document.querySelector(id).offsetTop;
 }
 
-function nativeScroll(distanceFromTheTop) {
-    window.scroll({
-        top: distanceFromTheTop, 
-        behavior: "smooth",
-    });
-}
+// function nativeScroll(distanceFromTheTop) {
+//     window.scroll({
+//         top: distanceFromTheTop, 
+//         behavior: "smooth",
+//     });
+// }
 
 function scrollToSection(event) {
     event.preventDefault();
     const distanceFromTheTop = getDistanceFromTheTop(event.target);
-    nativeScroll(distanceFromTheTop)
+    smoothScrollTo (0, distanceFromTheTop, 400);
     // const element = event.target;
     // const id = element.getAttribute("href");
     // const section = document.querySelector(id)
@@ -34,6 +34,7 @@ function smoothScrollTo(endX, endY, duration) {
     const startTime = new Date().getTime();
 
     duration = typeof duration !== "undefined" ? duration : 400;
+    
 
     const easeInOutQuart = (time, from, distance, duration) => {
         if ((time /= duration / 2) < 1)
@@ -49,7 +50,7 @@ function smoothScrollTo(endX, endY, duration) {
             clearInterval(timer)
         }
         window.scroll(newX, newY);
-    }, 1000);
+    }, 1000 / 60);
 }
 
 
