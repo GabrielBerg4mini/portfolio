@@ -25,7 +25,7 @@ body{
 ul li a:hover {
     background-color: #302f2f;
     border-radius: 0.2rem ;
-    text-decoration:underline;
+    /* text-decoration:underline; */
 }
 .nav {
     text-align: center;
@@ -93,37 +93,38 @@ li, a, ul{
 #presentation {
     width: 100%;
     min-height: 100vh;
-    /* background-color: blue; */
 }
 #about {
     width: 80%;
     height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: center;
-    background-color: yellow;
 }
 .me-img{
-    width: 40%;
     display: flex;
     justify-content: center;
-    /* background-color: red; */
+    align-items: center;
+    width: 50%;
 }
 .image {
     width: 65%;
+    border-radius: 1.2rem;
 }
 .text-me{
     width: 60%;
     padding-top: 1rem;
     color: white;
     padding-right: 5rem;
-    /* background-color: #222222; */
+    font-size: 1.5rem;
 }
 .tittle2 {
-    
+    text-align: center;
     font-size: 3rem;
     color: aliceblue;
 }
 .p2 {
+    padding-top: 1rem;
     text-align: left;
-}
+} 
 
