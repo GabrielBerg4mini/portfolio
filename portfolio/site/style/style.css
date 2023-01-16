@@ -90,10 +90,21 @@ li, a, ul{
 #button {
     padding-top: 1rem;
     padding-left: 18rem;
-    position: relative;
-    width: 150px ;
-    height: 55px;
-    border-radius: 7px;
+}
+.text-btn {
+    color: rgb(155, 155, 221);
+    font-size: 1rem;
+}
+.btn {
+    background-color: #1a1919;
+    opacity: 70%;
+    padding: 1rem 5rem;
+    border-radius: 0.2rem;
+    border: rgb(155, 155, 221) solid 0.1rem;
+}
+.btn:hover {
+    background-color: red;
+    
 }
 #presentation {
     width: 100%;
