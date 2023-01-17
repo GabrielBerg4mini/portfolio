@@ -20,20 +20,21 @@ body{
     /* background-color: #222222; */
     position: fixed; 
 }
-ul li a:hover {
-    background-color: #302f2f;
-    border-radius: 0.2rem ;
-    /* text-decoration:underline; */
-}
 .menu {
     text-align: center;
     padding-top: 150%;
     font-size: 1.2rem; 
 }
+.menu:hover {
+    cursor: pointer;  
+}
  .border1, .border2, .border3, .border4 {
     border: solid 1px #302f2f;
     padding: 1.2rem;
 } 
+.border1:hover, .border2:hover, .border3:hover, .border4:hover {
+    text-transform: uppercase;
+}
 .container-social {
     padding-top: 10rem;
 }
@@ -80,12 +81,14 @@ li, a, ul{
 .tags, .tags1, .tags2, .tags3 {
     font-family: 'La Belle Aurore', cursive;
     font-size: 1.1rem;
+    opacity: 50%;
 }
 
 .p1 {
     padding-left: 14rem;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    opacity: 60%;
 }
 #button {
     padding-top: 1rem;
@@ -96,15 +99,17 @@ li, a, ul{
     font-size: 1rem;
 }
 .btn {
+    opacity: 80%;
     background-color: #1a1919;
-    opacity: 70%;
     padding: 1rem 5rem;
     border-radius: 0.2rem;
     border: rgb(155, 155, 221) solid 0.1rem;
 }
+.text-btn:hover{
+    text-transform: uppercase;
+}
 .btn:hover {
-    background-color: red;
-    
+    cursor: pointer;
 }
 #presentation {
     width: 100%;
@@ -142,4 +147,22 @@ li, a, ul{
 .p2 {
     padding-top: 1rem;
     text-align: left;
+}
+.tittle3{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+}
+#skills {
+    cursor: pointer;
+}
+.skills-img {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.img-js, .img-rc, .img-html, .img-css {
+    width: 150px;
 }
