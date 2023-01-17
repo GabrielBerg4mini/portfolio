@@ -17,7 +17,7 @@ body{
 #container-nav {
     width: 10%;
     height: 100%;
-    /* background-color: #222222; */
+    background-color: #222222;
     position: fixed; 
 }
 .menu {
@@ -26,14 +26,15 @@ body{
     font-size: 1.2rem; 
 }
 .menu:hover {
-    cursor: pointer;  
+    cursor: pointer;
 }
  .border1, .border2, .border3, .border4 {
     border: solid 1px #302f2f;
     padding: 1.2rem;
 } 
-.border1:hover, .border2:hover, .border3:hover, .border4:hover {
+.border1 a:hover, .border2 a:hover, .border3 a:hover, .border4 a:hover {
     text-transform: uppercase;
+    color: #ffffffb9;
 }
 .container-social {
     padding-top: 10rem;
@@ -155,14 +156,13 @@ li, a, ul{
     color: white;
     font-family: 'Montserrat';
 }
-#skills {
-    cursor: pointer;
-}
 .skills-img {
+    image-rendering: optimizeQuality;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
 }
 .img-js, .img-rc, .img-html, .img-css {
     width: 150px;
+    cursor: pointer;
 }
