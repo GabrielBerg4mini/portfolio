@@ -156,11 +156,13 @@ li, a, ul{
     color: white;
     font-family: 'Montserrat';
 }
-.skills-img {
-    image-rendering: optimizeQuality;
+.btn-modal {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
+}
+.btn-img-js, .btn-img-rc, .btn-img-html, .btn-img-css {
+    background-color: #1a1919;
 }
 .img-js, .img-rc, .img-html, .img-css {
     width: 150px;
