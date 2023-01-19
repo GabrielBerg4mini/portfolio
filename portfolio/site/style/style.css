@@ -8,7 +8,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: #1a1919;
+    /* background-color: #1a1919; */
 }
 .container {
     width: 100%;
@@ -156,14 +156,13 @@ li, a, ul{
     color: white;
     font-family: 'Montserrat';
 }
-.btn-modal {
+#btn-modal {
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
 }
-.btn-img-js, .btn-img-rc, .btn-img-html, .btn-img-css {
+/* .btn-img-js, .btn-img-rc, .btn-img-html, .btn-img-css {
     background-color: #1a1919;
-}
+} */
 .img-js, .img-rc, .img-html, .img-css {
     width: 150px;
     cursor: pointer;
