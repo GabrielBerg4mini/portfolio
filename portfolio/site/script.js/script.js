@@ -7,5 +7,5 @@ buttonJs.onclick = function() {
 };
 
 buttonClose.onclick = function() {
-    
-}
+    modalJs.close()
+};
