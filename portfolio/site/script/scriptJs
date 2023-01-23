@@ -1,5 +1,5 @@
 const buttonJs = document.getElementById("btn-img-js");
-const modalJs = document.getElementById("btn-modal");
+const modalJs = document.getElementById("btn-Js");
 const buttonClose = document.getElementById("fechar-modal");
 
 buttonJs.onclick = function() {
@@ -8,4 +8,15 @@ buttonJs.onclick = function() {
 
 buttonClose.onclick = function() {
     modalJs.close()
+};
+
+const buttonReact = document.getElementById("btn-img-react");
+const modalReact = document.getElementById("btn-react");
+const buttonClose2 = document.getElementById("fechar-modal2");
+
+buttonReact.onclick = function() {
+    modalReact.showModal()
+};
+buttonClose2.onclick = function() {
+    modalReact.close()
 };
