@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,28 +13,106 @@
         href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@700&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
-<div class="container-buttons">
-    <button id="btn-img-js"><img class="img-js" src="./site/imgs/js1.png" alt="javascript"></button>
-    <dialog id="btn-Js">
+    <div class="container">
 
-           <div class="btn-fechar"><button id="fechar-modal"><img class="img-btn" src="./site/imgs/x.png" alt="fechar"></button></div>
+        <section id="navigation">
 
-        <h2 class="tittle-Js">javascript</h2>
-        <p class="paragrafo-Js">I started studying this programming language so dear to many, about 6 months ago, I'm currently
-            getting deeper into it, and using it even more in my projects, especially in this portfolio that
-            I'm dedicating myself a lot, I have a little difficulty sometimes learn it, but I'm trying my
-            best to be a great programmer and learn as much about the language as possible.</p>
-    </dialog >
+            <div id="container-nav">
+                <div class="nav-menu">
+                    <nav class="menu">
+                        <ul>
+                            <li class="border1"><a href="#about">About Me</a></li>
+                            <li class="border2"><a href="#skills">My Skills</a></li>
+                            <li class="border3"><a href="#work">Work</a></li>
+                            <li class="border4"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container-social">
+                    <ul class="social">
+                        <li class="ldn"><a href="https://www.linkedin.com/in/gabriel-bergamini-1424b323b/"
+                                target="_blank"><img class="ldn1" src="./site/imgs/linkedin.png" alt="linkedin"></a>
+                        </li>
 
-    <button id="btn-img-react"><img class="img-react" src="./site/imgs/react.png" alt="react"></button>
+                        <li class="gh"><a href="https://github.com/GabrielBerg4mini" target="_blank"><img class="gh1"
+                                    src="./site/imgs/github.png" alt="github"></a></li>
+                    </ul>
+                </div>
 
-    <dialog id="btn-react">
-        <div class="btn-fechar"><button id="fechar-modal2"><img class="img-btn" src="./site/imgs/x.png" alt="fechar"></button></div> 
-        <h2 class="tittle-React">REACT</h2>
-        <p class="paragrafo-react">I'm going to start studying react in my course now, as soon as I have a good knowledge of this library, I'll be bringing projects, and posting them here in my portfolio.</p>
-    </dialog>
-</div>
-<script src="./site/script/scriptJs"></script>
+            </div>
+
+        </section>
+
+        <div class="pg-main">
+            <div class="container-text-dinamico">
+                <div class="estatico">Hi, I'm</div>
+
+                <ul class="dinamico">
+                    <li><span>Gabriel</span></li>
+                    <li><span>Web Developer</span></li>
+                </ul>
+            </div>
+        </div>
+
+
+        </main>
+
+        <div class="container-buttons">
+            <button id="btn-img-js" onclick="abrirModal(this)"><img class="img-js" src="./site/imgs/js1.png"
+                    alt="javascript"></button>
+            <dialog id="btn-Js">
+
+                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
+                            src="./site/imgs/x.png" alt="fechar"></button></div>
+
+                <h2 class="tittle-Js">javascript</h2>
+                <p class="paragrafo-Js">I started studying this programming language so dear to many, about 6 months
+                    ago,
+                    I'm currently
+                    getting deeper into it, and using it even more in my projects, especially in this portfolio that
+                    I'm dedicating myself a lot, I have a little difficulty sometimes learn it, but I'm trying my
+                    best to be a great programmer and learn as much about the language as possible.</p>
+            </dialog>
+
+            <button id="btn-img-react" onclick="abrirModal(this)"><img class="img-react" src="./site/imgs/react.png"
+                    alt="react"></button>
+
+            <dialog id="btn-react">
+                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
+                            src="./site/imgs/x.png" alt="fechar"></button></div>
+                <h2 class="tittle-React">REACT</h2>
+                <p class="paragrafo-react">I'm going to start studying react in my course now, as soon as I have a good
+                    knowledge of this library, I'll be bringing projects, and posting them here in my portfolio.</p>
+            </dialog>
+
+            <button id="btn-img-html" onclick="abrirModal(this)"><img class="img-html" src="./site/imgs/html.png"
+                    alt="html"></button>
+            <dialog>
+                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
+                            src="./site/imgs/x.png" alt="fechar"></button></div>
+
+                <h1 class="tittle-html">HTML5</h1>
+                <p class="paragrafo-html">about the markup language (HTML5), I have a very broad knowledge, even if
+                    sometimes I end up in doubt about something, I'm always researching and learning more about it, it
+                    was my first contact with programming, 8 months ago, with CSS3, I've done many projects using it,
+                    along with the CSS3 styling language and the great JavaScript.</p>
+            </dialog>
+            <button id="btn-img-css" onclick="abrirModal(this)"><img class="img-css" src="./site/imgs/css.png"
+                    alt="css"></button>
+            <dialog>
+                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"> <img class="img-btn"
+                            src="./site/imgs/x.png" alt="fechar"></button></div>
+                <h1 class="tittle-css">CSS</h1>
+                <p class="paragrafo-css">The style language known as CSS, was my second contact with something related
+                    to programming, with it I learned many things, and I'm still learning, it's been about 7 months that
+                    I've been studying about it, and every day I learn something new, some property that I've never
+                    heard of, or even new stuff, I'm digging deeper into it and HTML5, as said before.</p>
+            </dialog>
+        </div>
+    </div>
+    <script src="./site/script/scriptJs"></script>
 </body>
+
 </html>
