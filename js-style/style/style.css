@@ -290,7 +290,8 @@ dialog::backdrop{
  .projeto-1 {
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    text-align: center;
     color: rgb(178, 238, 238);
     font-family: 'Montserrat';
  }
@@ -300,8 +301,9 @@ dialog::backdrop{
  }
  .img-projeto1{
     border-radius: 2rem;
+    margin-top: 0.5rem;
  }
  .img-projeto1:hover{
     width: 16rem;
-    box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.651);
+    box-shadow: 0 0rem 1rem rgba(255, 255, 255, 0.651);
  }  
