@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="./site/style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@700&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@700&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300&display=swap"
         rel="stylesheet">
 </head>
 
@@ -25,7 +24,7 @@
                         <ul>
                             <li class="border1"><a href="#about">Sobre mim</a></li>
                             <li class="border2"><a href="#skills">Habilidades</a></li>
-                            <li class="border3"><a href="#work">Trabalhos</a></li>
+                            <li class="border3"><a href="#work">Projetos</a></li>
                             <li class="border4"><a href="#contact">Contato</a></li>
                         </ul>
                     </nav>
@@ -44,7 +43,7 @@
             </div>
 
         </section>
-        <section class="first-pag">
+        <section id="first-page">
 
             <div class="container1">
 
@@ -57,7 +56,28 @@
 
         </section>
 
-        <div class="container-buttons">
+        <section id="presentation">
+
+            <div id="about">
+    
+                <div class="me-img"><img class="image" src="./site/imgs/eu.jfif" alt="eu"></div>
+    
+                <div class="text-me">
+                    <h1 class="tittle2">Sobre mim </h1>
+    
+                    <p class="p2">Olá, meu nome é Gabriel, atualmente tenho 19 anos, e eu trabalho atualmente sendo Auxiliar de eletricista, mas estou procurando meu primeiro emprego como Desenvolvedor Web.</p>
+    
+                    <p class="p2">Estou estudando há cerca de 8 meses para me tornar um Desenvolvedor Web, acabei conhecendo esse trabalho incrível navegando na internet, depois de ver um anúncio de um curso, que era o Programador Br - Full Stack, e desde esse dia venho estudando sem parar porque percebi o quão longe da pra ir nesse ramo, não estou falando apenas de dinheiro, mas sim como profissional e o quanto eu conseguirei ajudar muitas pessoas com esse trabalho.</p>
+    
+                    <p class="p2">Obrigado pela atenção!!</p>
+                </div>
+            </div>
+            </section>
+
+        <section id="skills">
+        <div class="tittle-skills"><h1 >Habilidades</h1></div>
+        <div class="section-buttons">
+            
             <button id="btn-img-js" onclick="abrirModal(this)"><img class="img-js" src="./site/imgs/js1.png"
                     alt="javascript"></button>
             <dialog id="btn-Js">
@@ -66,13 +86,14 @@
                             src="./site/imgs/x.png" alt="fechar"></button></div>
 
                 <h2 class="tittle-Js">javascript</h2>
-                <p class="paragrafo-Js">Comecei a estudar essa linguagem de programação tão querida por muitos, cerca 6 meses atrás, eu estou cada vez mais  me aprofundando e usando ainda mais em meus projetos, principalmente neste portfólio que estou me dedicando muito, tenho um pouco de dificuldade as vezes em aprender, mas estou tentando o meu melhor para ser um ótimo programador e aprender o máximo possível sobre a linguagem.</p>
+                <p class="paragrafo-Js">Comecei a estudar essa linguagem de programação tão querida por muitos, cerca de 6 meses atrás, eu estou cada vez mais  me aprofundando e usando ainda mais em meus projetos, principalmente neste portfólio que estou me dedicando muito, tenho um pouco de dificuldade as vezes em aprender, mas estou tentando o meu melhor para ser um ótimo programador e aprender o máximo possível sobre a linguagem.</p>
             </dialog>
 
             <button id="btn-img-react" onclick="abrirModal(this)"><img class="img-react" src="./site/imgs/react.png"
                     alt="react"></button>
 
             <dialog id="btn-react">
+
                 <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
                             src="./site/imgs/x.png" alt="fechar"></button></div>
                 <h2 class="tittle-React">REACT</h2>
@@ -97,6 +118,16 @@
                 <p class="paragrafo-css">A linguagem de estilização conhecida como CSS, foi meu segundo contato com algo relacionado à programação, com ela aprendi muitas coisas, e ainda estou aprendendo, já faz uns 7 meses que Tenho estudado sobre isso, e a cada dia aprendo algo novo, alguma propriedade que nunca tinha ouvido falar, ou até mesmo coisas novas, estou me aprofundando nela no HTML5 e na Linguagem de programação javascript, como disse antes.</p>
             </dialog>
         </div>
+    </section>
+
+    <section id="work">
+        <h1 class="tittle-projetos">Projetos</h1>
+        <div class="container-projetos">
+            <a class="projeto-1" href="">Projetos pessoais<img class="img-projeto1" src="./site/imgs/projeto1.png" alt=""> </a>
+            <a href=""><img src="" alt=""></a>
+        </div>
+    </section>
+
     </div>
     <script src="./site/script/scriptJs"></script>
 </body>

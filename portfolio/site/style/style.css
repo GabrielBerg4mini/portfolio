@@ -37,10 +37,7 @@ li, a, ul{
     color: #ffffffb9;
     text-shadow: 0 0 1rem rgba(255, 255, 255, 0.555)
 }
-.container-buttons {
-    display: flex;
-    justify-content: center;
-}
+
 .container-social {
     padding-top: 8rem;
 }
@@ -56,7 +53,7 @@ li, a, ul{
     width: 3rem;
     box-shadow: 0 0 1rem rgba(255, 255, 255, 0.39);
 }
-.first-pag {
+#first-page {
     width: 100%;
     min-height: 100vh;   
     display: flex;
@@ -101,7 +98,7 @@ li, a, ul{
     100%  { background-color: #2691e9; }
   }
 .btn-contact {
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-left: 12rem;
 
 }
@@ -122,6 +119,24 @@ li, a, ul{
 .text-btn {
     color: #52a7ec;
 }
+ #skills {
+   width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.tittle-skills {
+    color: rgb(162, 198, 211);
+    font-size: 3rem;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+.section-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 12rem 6rem;
+}
 dialog {
     width: 60%;
     height: 60%;
@@ -130,20 +145,24 @@ dialog {
     border-radius: 1rem;
     box-shadow: 0 0 2rem rgba(255, 255, 255, 0.541);
     border: #1a1919;
-    background-color: #dbdada13;
+    background-color: #050505e8;
+}
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
 }
 #btn-img-js, #btn-img-react, #btn-img-html, #btn-img-css{
     border: #1a1919;
     background-color: rgba(0, 0, 0, 0);
 }
 .img-js:hover, .img-react:hover, .img-html:hover, .img-css:hover {
-    width: 6rem;
+    width: 15rem;
     cursor: pointer;
     box-shadow:  0 0 2rem rgba(245, 245, 245, 0.479);
 }
 .img-js, .img-react, .img-html, .img-css {
     border-radius: 0.5rem;
-    
+    width: 10rem;
+    image-rendering: optimizeQuality;
 }
 .btn-fechar {
     padding: 1rem 1rem 1rem 0;
@@ -204,3 +223,85 @@ dialog {
     font-family: 'Montserrat';
     color: rgb(199, 184, 184);
 }
+#presentation {
+    width: 100%;
+    min-height: 100vh;
+}
+#about {
+    width: 80%;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.me-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    width: 20rem;
+    border-radius: 1.2rem;
+}
+.image:hover {
+    width: 25rem;
+    cursor: pointer;
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.623);
+}
+.text-me{
+    width: 60%;
+    padding-top: 2rem;
+    padding-right: 5rem;
+    font-size: 1.5rem;
+}
+.tittle2{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: rgb(94, 161, 238);
+    text-shadow: 0 0 0.5rem rgba(221, 221, 221, 0.253);
+    font-family: 'Montserrat';
+}
+.p2 {
+    color: #92b9da;
+    padding-top: 1rem;
+    text-align: left;
+}
+#work{
+    width: 100%;
+    min-height:100vh;
+}
+.tittle-projetos {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 0.5rem rgb(43, 144, 226);
+    padding-top: 2rem;
+    font-size: 3.2rem;
+    font-family: 'Montserrat';
+}
+.container-projetos{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+ .projeto-1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    color: rgb(178, 238, 238);
+    font-family: 'Montserrat';
+ }
+ .projeto-1:hover {
+    cursor: pointer;
+
+ }
+ .img-projeto1{
+    border-radius: 2rem;
+ }
+ .img-projeto1:hover{
+    width: 16rem;
+    box-shadow: 0 1rem 1rem rgba(255, 255, 255, 0.651);
+ }  
