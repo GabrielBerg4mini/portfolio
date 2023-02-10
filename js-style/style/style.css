@@ -171,7 +171,8 @@ dialog::backdrop{
 }
 
 .img-js:hover, .img-react:hover, .img-html:hover, .img-css:hover {
-    width: 15rem;
+    transform: scale(1.2);
+    transition: all 1s;
     cursor: pointer;
     box-shadow:  0 0 2rem rgba(245, 245, 245, 0.479);
 }
