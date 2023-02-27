@@ -6,44 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=">
     <title>Gabriel Bergamini</title>
-    <link rel="stylesheet" href="./js-style/style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@700&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@700&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@200;300;500&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div class="seta"><a  href="#first-page"><img class="img-seta" src="./js-style/imgs/seta.png" alt="seta"></a>
-</div>
-        <section id="navigation">
+        <div class="seta"><a href="#first-page"><img class="img-seta" src="./js-style/imgs/seta.png" alt="seta"></a>
+        </div>
 
-            <div id="container-nav">
-                <div class="nav-menu">
-                    <nav class="menu">
-                        <ul>
-                            <li class="border1"><a href="#about">Sobre mim</a></li>
-                            <li class="border2"><a href="#skills">Habilidades</a></li>
-                            <li class="border3"><a href="#work">Projetos</a></li>
-                            <li class="border4"><a href="#contact">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="container-social">
-                    <ul class="social">
-                        <li class="ldn"><a href="https://www.linkedin.com/in/gabriel-bergamini-1424b323b/"
-                                target="_blank"><img class="ldn1" src="./js-style/imgs/linkedin.png" alt="linkedin"></a>
-                        </li>
+        <header>
+            <nav class="navigation">
 
-                        <li class="gh"><a href="https://github.com/GabrielBerg4mini" target="_blank"><img class="gh1"
-                                    src="./js-style/imgs/github.png" alt="github"></a></li>
-                    </ul>
-                </div>
+                <a href="#about">Sobre mim</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#work">Projetos</a>
+                <a href="#contact">Contato</a>
 
-            </div>
+                <a href=""><img src="./" alt=""></a>
+            </nav>
+    
+        </header>
 
-        </section>
+
         <section id="first-page">
 
             <div class="container1">
@@ -52,104 +41,134 @@
 
             </div>
 
-            <div class="btn-contact"><button class="contact" ><a class="text-btn" href="#contact">Meu Contato!</a> </button></div>
+            <div class="btn-contact"><button class="contact"><a class="text-btn" href="#contact">Meu Contato!</a>
+                </button></div>
 
         </section>
 
         <section id="presentation">
 
             <div id="about">
-    
+
                 <div class="me-img"><img class="image" src="./js-style/imgs/eu.jfif" alt="eu"></div>
-    
+
                 <div class="text-me">
                     <h1 class="tittle2">Sobre mim </h1>
-    
-                    <p class="p2">Olá, meu nome é Gabriel, atualmente tenho 19 anos, e eu trabalho atualmente sendo Auxiliar de eletricista, mas estou procurando meu primeiro emprego como Desenvolvedor Web.</p>
-    
-                    <p class="p2">Estou estudando há cerca de 8 meses para me tornar um Desenvolvedor Web, acabei conhecendo esse trabalho incrível navegando na internet, depois de ver um anúncio de um curso, que era o Programador Br - Full Stack, e desde esse dia venho estudando sem parar porque percebi o quão longe da pra ir nesse ramo, não estou falando apenas de dinheiro, mas sim como profissional e o quanto eu conseguirei ajudar muitas pessoas com esse trabalho.</p>
-    
+
+                    <p class="p2">Olá, meu nome é Gabriel, atualmente tenho 19 anos, e eu trabalho atualmente sendo
+                        Auxiliar de eletricista, mas estou procurando meu primeiro emprego como Desenvolvedor Web.</p>
+
+                    <p class="p2">Estou estudando há cerca de 8 meses para me tornar um Desenvolvedor Web, acabei
+                        conhecendo esse trabalho incrível navegando na internet, depois de ver um anúncio de um curso,
+                        que era o Programador Br - Full Stack, e desde esse dia venho estudando sem parar porque percebi
+                        o quão longe da pra ir nesse ramo, não estou falando apenas de dinheiro, mas sim como
+                        profissional e o quanto eu conseguirei ajudar muitas pessoas com esse trabalho.</p>
+
                     <p class="p2">Obrigado pela atenção!!</p>
                 </div>
             </div>
-            </section>
+        </section>
 
         <section id="skills">
-        <div class="tittle-skills"><h1 >Habilidades</h1></div>
-        <div class="section-buttons">
-            
-            <button id="btn-img-js" onclick="abrirModal(this)"><img class="img-js" src="./js-style/imgs/js2.png"
-                    alt="javascript"></button>
-            <dialog id="btn-Js">
+            <div class="tittle-skills">
+                <h1>Habilidades</h1>
+            </div>
+            <div class="section-buttons">
 
-                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
-                            src="./js-style/imgs/x.png" alt="fechar"></button></div>
+                <button id="btn-img-js" onclick="abrirModal(this)"><img class="img-js" src="./js-style/imgs/js2.png"
+                        alt="javascript"></button>
+                <dialog id="btn-Js">
 
-                <h2 class="tittle-Js">javascript</h2>
-                <p class="paragrafo-Js">Comecei a estudar essa linguagem de programação tão querida por muitos, cerca de 6 meses atrás, eu estou cada vez mais  me aprofundando e usando ainda mais em meus projetos, principalmente neste portfólio que estou me dedicando muito, tenho um pouco de dificuldade as vezes em aprender, mas estou tentando o meu melhor para ser um ótimo programador e aprender o máximo possível sobre a linguagem.</p>
-            </dialog>
+                    <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
+                                src="./js-style/imgs/x.png" alt="fechar"></button></div>
 
-            <button id="btn-img-react" onclick="abrirModal(this)"><img class="img-react" src="./js-style/imgs/react1.png"
-                    alt="react"></button>
+                    <h2 class="tittle-Js">javascript</h2>
+                    <p class="paragrafo-Js">Comecei a estudar essa linguagem de programação tão querida por muitos,
+                        cerca de 6 meses atrás, eu estou cada vez mais me aprofundando e usando ainda mais em meus
+                        projetos, principalmente neste portfólio que estou me dedicando muito, tenho um pouco de
+                        dificuldade as vezes em aprender, mas estou tentando o meu melhor para ser um ótimo programador
+                        e aprender o máximo possível sobre a linguagem.</p>
+                </dialog>
 
-            <dialog id="btn-react">
+                <button id="btn-img-react" onclick="abrirModal(this)"><img class="img-react"
+                        src="./js-style/imgs/react1.png" alt="react"></button>
 
-                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
-                            src="./js-style/imgs/x.png" alt="fechar"></button></div>
-                <h2 class="tittle-React">REACT</h2>
-                <p class="paragrafo-react">Vou começar a estudar react no meu curso agora, assim que tiver um bom conhecimento dessa biblioteca, estarei trazendo projetos usando ela, e postando aqui no meu portfólio.</p>
-            </dialog>
+                <dialog id="btn-react">
 
-            <button id="btn-img-html" onclick="abrirModal(this)"><img class="img-html" src="./js-style/imgs/html.png"
-                    alt="html"></button>
-            <dialog>
-                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
-                            src="./js-style/imgs/x.png" alt="fechar"></button></div>
+                    <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
+                                src="./js-style/imgs/x.png" alt="fechar"></button></div>
+                    <h2 class="tittle-React">REACT</h2>
+                    <p class="paragrafo-react">Vou começar a estudar react no meu curso agora, assim que tiver um bom
+                        conhecimento dessa biblioteca, estarei trazendo projetos usando ela, e postando aqui no meu
+                        portfólio.</p>
+                </dialog>
 
-                <h1 class="tittle-html">HTML5</h1>
-                <p class="paragrafo-html">sobre a linguagem de marcação (HTML5), tenho um conhecimento muito amplo, mesmo às vezes acabo ficando em dúvida sobre alguma coisa, mas estou sempre pesquisando e aprendendo mais sobre ela, o Html foi o meu primeiro contato com a programação, a 8 meses atrás, junto do CSS3, já fiz muitos projetos usando ele.</p>
-            </dialog>
-            <button id="btn-img-css" onclick="abrirModal(this)"><img class="img-css" src="./js-style/imgs/css.png"
-                    alt="css"></button>
-            <dialog>
-                <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"> <img class="img-btn"
-                            src="./js-style/imgs/x.png" alt="fechar"></button></div>
-                <h1 class="tittle-css">CSS</h1>
-                <p class="paragrafo-css">A linguagem de estilização conhecida como CSS, foi meu segundo contato com algo relacionado à programação, com ela aprendi muitas coisas, e ainda estou aprendendo, já faz uns 7 meses que Tenho estudado sobre isso, e a cada dia aprendo algo novo, alguma propriedade que nunca tinha ouvido falar, ou até mesmo coisas novas, estou me aprofundando nela no HTML5 e na Linguagem de programação javascript, como disse antes.</p>
-            </dialog>
-        </div>
-    </section>
+                <button id="btn-img-html" onclick="abrirModal(this)"><img class="img-html"
+                        src="./js-style/imgs/html.png" alt="html"></button>
+                <dialog>
+                    <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"><img class="img-btn"
+                                src="./js-style/imgs/x.png" alt="fechar"></button></div>
 
-    <section id="work">
-        <h1 class="tittle-projetos">Projetos</h1>
-        <div class="container-projetos">
-            <a class="projeto-1" href="">Projetos pessoais<img class="img-projeto1" src="./js-style/imgs/projeto1.png" alt=""> </a>
-            <a class="projeto-2" href="">Projetos HTML/CSS<img class="img-projeto1" src="./js-style/imgs/projeto1.png" alt="projetos2"></a>
-            <a class="projeto-3" href="">Projetos HTML/CSS/JS<img class="img-projeto1" src="./js-style/imgs/projeto1.png" alt=""></a>
-            <a class="projeto-4" href="">Projetos REACT<img class="img-projeto1" src="./js-style/imgs/projeto1.png" alt="" ></a>
+                    <h1 class="tittle-html">HTML5</h1>
+                    <p class="paragrafo-html">sobre a linguagem de marcação (HTML5), tenho um conhecimento muito amplo,
+                        mesmo às vezes acabo ficando em dúvida sobre alguma coisa, mas estou sempre pesquisando e
+                        aprendendo mais sobre ela, o Html foi o meu primeiro contato com a programação, a 8 meses atrás,
+                        junto do CSS3, já fiz muitos projetos usando ele.</p>
+                </dialog>
+                <button id="btn-img-css" onclick="abrirModal(this)"><img class="img-css" src="./js-style/imgs/css.png"
+                        alt="css"></button>
+                <dialog>
+                    <div class="btn-fechar" onclick="fecharModal(this)"><button id="fechar-modal"> <img class="img-btn"
+                                src="./js-style/imgs/x.png" alt="fechar"></button></div>
+                    <h1 class="tittle-css">CSS</h1>
+                    <p class="paragrafo-css">A linguagem de estilização conhecida como CSS, foi meu segundo contato com
+                        algo relacionado à programação, com ela aprendi muitas coisas, e ainda estou aprendendo, já faz
+                        uns 7 meses que Tenho estudado sobre isso, e a cada dia aprendo algo novo, alguma propriedade
+                        que nunca tinha ouvido falar, ou até mesmo coisas novas, estou me aprofundando nela no HTML5 e
+                        na Linguagem de programação javascript, como disse antes.</p>
+                </dialog>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="work">
+            <h1 class="tittle-projetos">Projetos</h1>
+            <div class="container-projetos">
+                <a class="projeto-1" href="">Projetos pessoais<img class="img-projeto1"
+                        src="./js-style/imgs/projeto1.png" alt=""> </a>
+                <a class="projeto-2" href="">Projetos HTML/CSS<img class="img-projeto1"
+                        src="./js-style/imgs/projeto1.png" alt="projetos2"></a>
+                <a class="projeto-3" href="">Projetos HTML/CSS/JS<img class="img-projeto1"
+                        src="./js-style/imgs/projeto1.png" alt=""></a>
+                <a class="projeto-4" href="">Projetos REACT<img class="img-projeto1" src="./js-style/imgs/projeto1.png"
+                        alt=""></a>
 
-    <footer id="contact">
+            </div>
+        </section>
 
-        <h1 class="tittle-contact">Formas de contato</h1>
+        <footer id="contact">
 
-        <div class="container-contact">
+            <h1 class="tittle-contact">Formas de contato</h1>
 
-            <a href="https://www.linkedin.com/in/gabriel-bergamini-1424b323b/" target="_blank"><img class="img-contact" src="./js-style/imgs/linkedin1.png" alt="linkedin"></a>
-            
-            <p class="text-contact">Aqui está o meu linkedin, estou sempre postando meus avanços nele e algumas ideias para melhorar cada vez mais como um Desenvolvedor Web.</p>
+            <div class="container-contact">
 
-            <a href="https://github.com/GabrielBerg4mini" target="_blank"><img class="img-contact" src="./js-style/imgs/github1.png" alt="github"></a>
-            <p class="text-contact">Meu GitHub sempre está sendo usado, já que uso ele junto com Git e o GitHub DeskTop para publicar meus projetos nele, sempre trabalhando a parte de pull request e push também.</p>
+                <a href="https://www.linkedin.com/in/gabriel-bergamini-1424b323b/" target="_blank"><img
+                        class="img-contact" src="./js-style/imgs/linkedin1.png" alt="linkedin"></a>
 
-        </div>
+                <p class="text-contact">Aqui está o meu linkedin, estou sempre postando meus avanços nele e algumas
+                    ideias para melhorar cada vez mais como um Desenvolvedor Web.</p>
 
-    </footer>
+                <a href="https://github.com/GabrielBerg4mini" target="_blank"><img class="img-contact"
+                        src="./js-style/imgs/github1.png" alt="github"></a>
+                <p class="text-contact">Meu GitHub sempre está sendo usado, já que uso ele junto com Git e o GitHub
+                    DeskTop para publicar meus projetos nele, sempre trabalhando a parte de pull request e push também.
+                </p>
+
+            </div>
+
+        </footer>
 
     </div>
-    <script src="./js-style/script/script.Js"></script>
+    <script src="./script/script.Js"></script>
 </body>
 
 </html>
