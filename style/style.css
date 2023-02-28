@@ -13,7 +13,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
-.navigation {
+.navigation  {
     width: 10%;
     min-height: 100vh;
     position: fixed;
@@ -21,22 +21,42 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-}
-.container-social {
-    padding-top: 8rem;
-}
-.social{
-    display: flex;
+    padding: 5rem 0 0 0;
     justify-content: space-evenly;
 }
-.ldn1, .gh1 {
-    width: 2.2rem;
-    border-radius: 0.2rem;
+.navigation .border {
+    position: relative;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
 }
-.ldn1:hover, .gh1:hover{
+.navigation .border::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation .border:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.img-linkedin, .img-github {
     width: 3rem;
-    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.39);
+    border-radius: 50%;
+}
+.img-linkedin:hover, .img-github:hover {
+    transform: scale(1.2);
+    transition: all 1.5s;
+    box-shadow: 0 0 0.5rem #fff;
 }
 .seta{
     bottom: 14px;
@@ -47,9 +67,12 @@ html {
 }
 .img-seta {
     width: 2rem;
+    border-radius: 50%;
 }
 .img-seta:hover{
-    width: 2.5rem;
+    transform: scale(1.2);
+    transition: all 1.5s;
+    box-shadow: 0 0 0.5em #2691e9;
 }
 #first-page {
     width: 100%;
@@ -96,25 +119,28 @@ html {
     100%  { background-color: #2691e9; }
   }
 .btn-contact {
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-left: 12rem;
-
 }
 .contact {
-    padding: 1rem 2rem;
+    width: 14rem;
+    height: 4rem;
     border-radius: 0.5rem;
-    background-color: #050505;
-    border: 1px solid #2691e9;
-    color: white;
+    background:transparent;
+    border: 2px solid #2691e9;
+    transition: .5s;
 }
 .contact:hover{
+    color: white;
+    background: #0340726c;
     box-shadow: 0 0 4px white;
     cursor: pointer;
-    padding: 1.2rem 3rem;
-    text-transform: uppercase;
+    transform: scale(1.1);
+    transition: all 1.2s;
 }
 .text-btn {
-    color: #52a7ec;
+    color: white;
+    text-decoration: none;
 }
  #skills {
    width: 100%;
@@ -124,7 +150,7 @@ html {
     justify-content: center;
 } 
 .tittle-skills {
-    color: rgb(162, 198, 211);
+    color: white;
     font-size: 3rem;
     font-family: 'Montserrat';
     text-align: center;
@@ -136,13 +162,16 @@ html {
 }
 dialog {
     width: 60%;
-    height: 60%;
+    height: 65%;
     padding: auto;
     margin: auto;
     border-radius: 1rem;
-    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.541);
-    border: #1a1919;
-    background-color: #050505e8;
+    box-shadow: 0 0 2rem rgba(56, 54, 54, 0.5);
+    border: 2px solid rgba(37, 36, 36, 0.5);
+    background:transparent;
+    backdrop-filter: blur(2rem);
+    transform: scale(1.1);
+    transition:5s ease-in-out;
 }
 dialog::backdrop{
     background-color: rgb(0 0 0 / .5);
