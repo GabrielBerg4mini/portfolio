@@ -1,5 +1,4 @@
 
-
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
@@ -43,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function() { // On DOM Load initia
 });
 
 
-function abrirModal(abrir) {
+ function abrirModal(abrir) {
     abrir.nextElementSibling.showModal();
 };
 
 function fecharModal(fechar) {
-    fechar.parentNode.close();
+     fechar.parentNode.close();
 };
