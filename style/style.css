@@ -8,21 +8,22 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(120deg, black, #221133);
+    background-image:linear-gradient(120deg, black, #171e31);
 }
 html {
     scroll-behavior: smooth;
 }
+
 .navigation  {
     width: 10%;
     min-height: 100vh;
     position: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5rem 0 0 0;
+    padding-top: 5rem ;
     justify-content: space-evenly;
+    background-color: #00000071;
 }
 .navigation .border {
     position: relative;
@@ -30,7 +31,6 @@ html {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 500;
-    margin-left: 40px;
 }
 .navigation .border::after{
     content: '';
@@ -39,7 +39,7 @@ html {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #2691e9;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -56,7 +56,6 @@ html {
 .img-linkedin:hover, .img-github:hover {
     transform: scale(1.2);
     transition: all 1.5s;
-    box-shadow: 0 0 0.5rem #fff;
 }
 .seta{
     bottom: 14px;
@@ -73,6 +72,35 @@ html {
     transform: scale(1.2);
     transition: all 1.5s;
     box-shadow: 0 0 0.5em #2691e9;
+}
+.bolhas {
+    position: absolute;
+    display: flex;
+}
+.bolhas span {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #fff7,
+    0 0 50px #fff,
+    0 0 100px #fff;
+    animation: animar calc(30s / var(--i)) linear infinite;
+}
+@keyframes animar {
+    0% {
+        transform: translateY(400vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(0.3);
+    }
+}
+.bolhas span:nth-of-type(even) {
+    background: #2691e9;
+    box-shadow: 0 0 0 10px #2691e944,
+    0 0 50px #2691e9,
+    0 0 100px #2691e9;
 }
 #first-page {
     width: 100%;
@@ -139,15 +167,62 @@ html {
     transition: all 1.2s;
 }
 .text-btn {
-    color: white;
+    color: #2691e9;
     text-decoration: none;
 }
- #skills {
+.tittle2{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 0.5rem rgba(221, 221, 221, 0.253);
+    font-family: 'Montserrat';
+}
+.p2 {
+    color: white;
+    padding-top: 1rem;
+    text-align: left;
+}
+#presentation {
+    width: 100%;
+    min-height: 100vh;
+}
+#about {
+    width: 80%;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    position: relative;
+}
+.me-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    width: 20rem;
+    border-radius: 1.2rem;
+}
+.image:hover {
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.623);
+}
+.text-me{
+    width: 60%;
+    padding-top: 2rem;
+    padding-right: 5rem;
+    font-size: 1.2rem;
+} 
+#skills {
    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 } 
 .tittle-skills {
     color: white;
@@ -159,6 +234,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     margin: 10rem 0 10rem 8rem;
+    position: relative;
 }
 dialog {
     width: 60%;
@@ -166,12 +242,10 @@ dialog {
     padding: auto;
     margin: auto;
     border-radius: 1rem;
-    box-shadow: 0 0 2rem rgba(56, 54, 54, 0.5);
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
     border: 2px solid rgba(37, 36, 36, 0.5);
     background:transparent;
     backdrop-filter: blur(2rem);
-    transform: scale(1.1);
-    transition:5s ease-in-out;
 }
 dialog::backdrop{
     background-color: rgb(0 0 0 / .5);
@@ -203,19 +277,21 @@ dialog::backdrop{
 }
 .img-btn{
     width: 1.5rem;
+    border-radius: 50%;
 }
 .img-btn:hover {
     cursor: pointer;
-    width: 1.4rem;
+    transform: scale(1.6);
+    transition: all 2s;
 }
 .tittle-Js {
     font-family: 'Montserrat';
-    text-shadow: 0 0 1rem rgb(255, 255, 0);
+    text-shadow: 0 0 1rem rgba(255, 255, 0, 0.438);
     font-size: 4rem;
     text-align: center;
     padding-bottom: 1.5rem;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.726);
+    color: #fff;
 }
 .tittle-React {
     font-family: 'Montserrat';
@@ -224,7 +300,7 @@ dialog::backdrop{
     text-align: center;
     padding-bottom: 1.5rem;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.623);
+    color: #fff;
 }
 .tittle-html{
     font-family: 'Montserrat';
@@ -233,7 +309,7 @@ dialog::backdrop{
     text-align: center;
     padding-bottom: 1.5rem;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.623);
+    color: #fff;
 }
 .tittle-css {
     font-family: 'Montserrat';
@@ -242,70 +318,24 @@ dialog::backdrop{
     text-align: center;
     padding-bottom: 1.5rem;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.623);
+    color: #fff;
 }
 .paragrafo-Js, .paragrafo-react, .paragrafo-html, .paragrafo-css{
     text-align:center;
     font-size: 1.7rem;
     padding: 0 1rem;
     font-family: 'Montserrat';
-    color: rgb(199, 184, 184);
+    color: #fff;
 }
-#presentation {
-    width: 100%;
-    min-height: 100vh;
-}
-#about {
-    width: 80%;
-    height: 40rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-.me-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.image {
-    width: 20rem;
-    border-radius: 1.2rem;
-}
-.image:hover {
-    width: 25rem;
-    cursor: pointer;
-    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.623);
-}
-.text-me{
-    width: 60%;
-    padding-top: 2rem;
-    padding-right: 5rem;
-    font-size: 1.2rem;
-}
-.tittle2{
-    font-size: 3rem;
-    padding-bottom: 2rem;
-    text-align: center;
-    color: rgb(94, 161, 238);
-    text-shadow: 0 0 0.5rem rgba(221, 221, 221, 0.253);
-    font-family: 'Montserrat';
-}
-.p2 {
-    color: #92b9da;
-    padding-top: 1rem;
-    text-align: left;
-}
+
 #work{
     width: 100%;
     min-height:100vh;
+
 }
 .tittle-projetos {
     text-align: center;
-    color: white;
-    text-shadow: 0 0 0.5rem rgb(43, 144, 226);
+    color: rgb(43, 144, 226);
     padding-top: 2rem;
     font-size: 3.2rem;
     font-family: 'Montserrat';
@@ -314,62 +344,65 @@ dialog::backdrop{
     display: flex;
     justify-content: center;
     margin: 3rem 6rem 3rem 10rem;   
-    justify-content: space-evenly;
-
+    justify-content: space-evenly;   
+    position: relative;
 }
  .projeto-1, .projeto-2, .projeto-3, .projeto-4 {
     display: flex;
     flex-direction: column;
-
     font-size: 1.4rem;
     text-align: center;
-    color: rgb(178, 238, 238);
+    color: #fff;
     font-family: 'Montserrat';
- }
- .projeto-1:hover {
+    text-decoration: none;
     cursor: pointer;
-
  }
  .img-projeto1{
     border-radius: 1.5rem;
     margin-top: 0.5rem;
  }
  .img-projeto1:hover{
-    width: 16rem;
+    transform: scale(1.1);
+    transition: all 2s;
     box-shadow: 0 0rem 1rem rgba(255, 255, 255, 0.651);
  }  
  #contact{
     width: 100%;
-    min-height: 60vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background:#0d111a;
     justify-content: center;
  }
-.container-contact {
+ .conjunto-contatos {
+    display: flex;
+    flex-direction:row;
+    margin-top: 3rem;
+ }
+.container-contact, .container-contact2 {
     display: flex;
     align-items: center;
-    width: 80%;
     justify-content: center;
-    padding: 0 6rem 0 6rem;
-    margin: 8rem 0 5rem 0;
+    padding-left: 1rem;
 }
 .tittle-contact{
-    color: rgb(185, 230, 231);
+    color: #fff;
     font-family: 'Montserrat';
 }
 .text-contact {
-    font-size: 1.2rem;
+    font-size: 1em;
     color: white;
 }
 .img-contact{
-     width: 8rem;
-     margin-right: 2rem;
+    border-radius: 50%;
+     width: 2rem;
+     margin-right: 0.6rem;
 }
 .img-contact:hover{
     cursor: pointer;
     box-shadow: 0 0 1rem rgb(55, 172, 240);
-    width: 10rem;
+    transform: scale(1.2);
+    transition: all 2s;
 }
 
