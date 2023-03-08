@@ -176,11 +176,11 @@ background: #000;
     align-items: center;
 }
 .tittle2{
-    font-size: 4rem;
+    font-size: 6rem;
     padding-top: 18rem;
     padding-bottom: 2rem;
     text-align: center;
-    color: white;
+    color: rgb(125, 241, 177);
     font-family: 'Montserrat';
 }
 .p2 {
@@ -217,10 +217,9 @@ background: #000;
 .section-buttons{
     display: flex;
     justify-content: space-evenly;
-    position: relative;
 }
 #btn-img-js, #btn-img-react, #btn-img-html, #btn-img-css{
-    border: transparent;
+    border: none;
     background: transparent;
 
 }
@@ -228,6 +227,136 @@ background: #000;
     border-radius: 1rem;
     width: 18rem;
     margin: 0 0 40rem 0;
-    transform: scale(1.1);
-    transition: 1s infinite;
+}
+dialog {
+    width: 85%;
+    height: 55%;
+    padding: auto;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(37, 36, 36, 0.5);
+    background:transparent;
+    backdrop-filter: blur(2rem);
+}
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+}
+.btn-fechar {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    justify-content: end;
+}
+#fechar-modal {
+    background: transparent;
+    border: none;
+}
+.img-btn {
+    width: 5rem;
+}
+.tittle-Js {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(255, 255, 0, 0.788);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.tittle-React {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgb(111, 111, 235);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 10rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.tittle-html{
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(255, 0, 0, 0.89);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    color: #fff;
+}
+.tittle-css {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(50, 23, 148, 0.671);
+    font-size: 6rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+.paragrafo-Js, .paragrafo-react, .paragrafo-html, .paragrafo-css{
+    text-align:center;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    color: #fff;
+}
+#work{
+    width: 100%;
+    min-height:100vh;
+}
+.tittle-projetos {
+    text-align: center;
+    color: rgb(148, 188, 221);
+    padding-top: 20rem;
+    font-size: 6rem;
+    font-family: 'Montserrat';
+}
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15rem 6rem 0rem 10rem;   
+    justify-content: space-evenly;   
+}
+.projeto-1, .projeto-2, .projeto-3, .projeto-4 {
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+ }
+ .img-projeto1{
+    border-radius: 1.5rem;
+    margin: 5rem 0 5rem 0;
+ }
+ #contact{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#0d111a;
+    justify-content: center;
+ }
+ .conjunto-contatos {
+    display: flex;
+    flex-direction:row;
+    margin-top: 3rem;
+ }
+.container-contact, .container-contact2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+}
+.tittle-contact{
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Montserrat';
+}
+.text-contact {
+    font-size: 2.5rem;
+    color: white;
+}
+.img-contact{
+    border-radius: 50%;
+     width: 5rem;
+     margin-right: 1.2rem;
 }
