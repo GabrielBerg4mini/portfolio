@@ -32,7 +32,7 @@ html {
 }
 @keyframes animar {
   0% {
-      transform: translateY(600vh) scale(0);
+      transform: translateY(500vh) scale(0);
   }
   100% {
       transform: translateY(-10vh) scale(0.3);
