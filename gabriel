@@ -1,0 +1,268 @@
+[33mcommit 074cb7e6c9aa5dced1135ea6cf1bc9d0fe6f5c80[m[33m ([m[1;36mHEAD -> [m[1;32mresponsivo[m[33m, [m[1;31morigin/dialog[m[33m)[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Mar 9 22:09:21 2023 -0300
+
+    pronto
+
+[33mcommit 6b3fad20167d8a5825fcc487c386a86f32a09f23[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Mar 9 22:06:12 2023 -0300
+
+    Update index.html
+
+[33mcommit acedbbb60ec78ae00770a7918a7d3775325f5303[m
+Merge: 0b40b20 367c024
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Mar 9 22:06:08 2023 -0300
+
+    Merge branch 'main' into responsivo
+
+[33mcommit 0b40b20560475ca01140ebecfdb200ea22df194a[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Mar 9 22:00:21 2023 -0300
+
+    portifólio pronto
+
+[33mcommit f00ae33a9dd7fd2bc5fc88aed610da7ec52c82c0[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Mar 9 19:44:27 2023 -0300
+
+    mobile first pronto
+
+[33mcommit d667b9aa3fc2680d0323e523ba65b73e3ed2c263[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Tue Mar 7 21:17:22 2023 -0300
+
+    finalmente pronto
+
+[33mcommit ff49bc8606e8d4f7baceef2172b18d9f259809b4[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Tue Mar 7 20:52:26 2023 -0300
+
+    quase pronto o responsivo
+
+[33mcommit 658eb64fd52ff257778f25ccf51405fb1e8eb40c[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Tue Mar 7 20:51:30 2023 -0300
+
+    quase pronto o responsivo
+
+[33mcommit 367c024570bb5c5ba54f124f1656268e8eb90def[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Mar 1 22:34:22 2023 -0300
+
+    commitcss
+
+[33mcommit 01f409030359e3899573a39a125493e3058b2092[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Mar 1 22:33:52 2023 -0300
+
+    concertando o quebrado
+
+[33mcommit 08d368c0c2b853e01b7f621e37d7bd5f6c9ba10c[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Mar 1 22:18:51 2023 -0300
+
+    commit1
+
+[33mcommit 7a29c801084c85d0ebf906cea5c3d11d8398c921[m
+Merge: aeb5d25 e12799a
+Author: Gabriel Bergamini <107642863+GabrielBerg4mini@users.noreply.github.com>
+Date:   Wed Mar 1 19:23:35 2023 -0300
+
+    Merge pull request #2 from GabrielBerg4mini/dialog
+    
+    mergeando da branch dialog para a main.
+
+[33mcommit e12799a4aedf29ff98f8d348a802a25f4fdb9561[m
+Merge: 72bb5b9 aeb5d25
+Author: Gabriel Bergamini <107642863+GabrielBerg4mini@users.noreply.github.com>
+Date:   Wed Mar 1 19:22:43 2023 -0300
+
+    Merge branch 'main' into dialog
+
+[33mcommit 72bb5b93e986cf12a161cb435f0133486c925c3f[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Mar 1 19:13:27 2023 -0300
+
+    commit12
+
+[33mcommit aeb5d25ef8d5dcbc0f7eb05892234adaf0756344[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Mar 1 18:12:19 2023 -0300
+
+    commit2
+
+[33mcommit 6373789e9b8b41728d61f082a910487040177900[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Mar 1 17:51:41 2023 -0300
+
+    reajustando texto
+
+[33mcommit 65ff80b3b8b920767b329b3f25029f258701a0d8[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Mar 1 17:27:51 2023 -0300
+
+    Finalmente pronto, o único ponto a melhorar é o dialog
+
+[33mcommit 650c4710060272ee65b5cf3449354109e2d3be5c[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Tue Feb 28 18:13:34 2023 -0300
+
+    commit12
+    
+    imgs
+
+[33mcommit 1fdfb65be8e645dbd65ff95bd7f9cdd67165fef5[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Tue Feb 28 18:13:11 2023 -0300
+
+    Refazendo e melhorando o dialog
+
+[33mcommit c2920306208ee559a57b17be52a07d8be9502d7a[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Mon Feb 27 17:35:05 2023 -0300
+
+    começando de novo
+
+[33mcommit ed396f6e8303a2dead71221dfa97b86522f83e76[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Feb 9 21:27:01 2023 -0300
+
+    commit28
+
+[33mcommit bd85d1c554ff57e2e1e1d0a14fb2aae00969b4c6[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Feb 2 21:22:57 2023 -0300
+
+    commit28
+
+[33mcommit a67c0ae56c9d5b6dc16a4819a9556f7c36621e56[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Feb 2 15:30:30 2023 -0300
+
+    commit27
+
+[33mcommit 4805d74e301f2519a583ef03ee2a2f73910e5d54[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Feb 1 14:53:26 2023 -0300
+
+    commit27
+
+[33mcommit 153519e32c670018db6ed3017e2bb92939e74505[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Feb 1 14:43:57 2023 -0300
+
+    commit26
+
+[33mcommit a3a00acceaa4c5a48bf5f951dc2f91d2619e2a54[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Feb 1 14:35:58 2023 -0300
+
+    commit 26
+
+[33mcommit cfebedba5e43e206073c942b446ae5185a19103e[m
+Author: Gabriel Bergamini <107642863+GabrielBerg4mini@users.noreply.github.com>
+Date:   Wed Feb 1 13:39:55 2023 -0300
+
+    reescrevi denovo
+
+[33mcommit e0e3cd570b80e16ad347403b6d4b9d9a37cbeb2b[m
+Author: Gabriel Bergamini <107642863+GabrielBerg4mini@users.noreply.github.com>
+Date:   Wed Feb 1 13:38:50 2023 -0300
+
+    reescrevi o editefile
+
+[33mcommit 7e9abdb7faec178d6ada90c9aaf23903cb75c12c[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Feb 1 13:26:00 2023 -0300
+
+    commit25
+
+[33mcommit 568490eecac8c024f3efa615bdcfeb5e424a3cde[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Sat Jan 28 22:11:50 2023 -0300
+
+    commit23
+
+[33mcommit eb99db9348a2fb80d2258b8cddf9bb23e3611227[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Sat Jan 28 17:23:49 2023 -0300
+
+    commit24
+
+[33mcommit 990667b39dd9a04437c070415d6d8e5404c43fae[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Jan 25 21:51:13 2023 -0300
+
+    commit23
+
+[33mcommit bdc8ec4efc97d57a7416f5c201c30ad15acac678[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Mon Jan 23 20:59:45 2023 -0300
+
+    commit22
+
+[33mcommit 2f97f1716eec92c67dcf777ae3adc91959103c01[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Sat Jan 21 14:31:43 2023 -0300
+
+    commit21
+
+[33mcommit 4d31c1947b950db5ef9f3801215dcc5928168018[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Fri Jan 20 08:49:40 2023 -0300
+
+    commit21
+
+[33mcommit f6578737e8a9578a7d2e596ed244efc71b93f90a[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Fri Jan 20 08:19:42 2023 -0300
+
+    commit20
+
+[33mcommit c5b23ed8a352410510f3e3eb68044c3650ec05e0[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Jan 19 17:25:21 2023 -0300
+
+    commit19
+
+[33mcommit 7580125b21674a576c91cc5e0595f37a5c6769f8[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Thu Jan 19 17:16:59 2023 -0300
+
+    commit18
+
+[33mcommit f925892ce9c0a61440b30a6905d149fb40524b8e[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Jan 18 18:39:44 2023 -0300
+
+    commit18
+
+[33mcommit 11a2d76a981c926b0e5ba58d082e2ff91ff88fc3[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Wed Jan 18 07:35:31 2023 -0300
+
+    commit17
+
+[33mcommit caade8e2f6e0b357eacc329f8905ccf4dd77d1ca[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Tue Jan 17 19:37:07 2023 -0300
+
+    commit17
+
+[33mcommit 93cd1fdccbb94d602ed3614eb386a106414e61d1[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Tue Jan 17 07:16:25 2023 -0300
+
+    commit17
+
+[33mcommit 25a249162f7f16a4f56d10cc5bde012a5982aa5b[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Mon Jan 16 18:53:40 2023 -0300
+
+    commit16
+
+[33mcommit bc7f2661fddfaf5e6bc0fc2ca8c13ccb3666621c[m
+Author: Gabriel Bergamini <gabrielbergaminioficial@gmail.com>
+Date:   Mon Jan 16 18:37:20
