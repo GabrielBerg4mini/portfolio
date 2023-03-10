@@ -14,6 +14,36 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.bolhas {
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+.bolhas span {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #fff7,
+  0 0 50px #fff,
+  0 0 100px #fff;
+  animation: animar calc(30s / var(--i)) linear infinite;
+}
+@keyframes animar {
+  0% {
+      transform: translateY(600vh) scale(0);
+  }
+  100% {
+      transform: translateY(-10vh) scale(0.3);
+  }
+}
+.bolhas span:nth-of-type(even) {
+  background: #2691e9;
+  box-shadow: 0 0 0 10px #2691e944,
+  0 0 50px #2691e9,
+  0 0 100px #2691e9;
+}
 .container {
   width: 100%;
   min-height: 100vh;
@@ -333,4 +363,767 @@ dialog::backdrop{
   border-radius: 0.2rem;
    width: 1.8rem;
    margin-right: 1rem;
+}
+@media (min-width: 960px) and (max-width: 1400px) {
+  header {
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation  {
+    width: 10%;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem ;
+    justify-content: space-evenly;
+    background-color: #00000071;
+  }
+  .navigation .border {
+    position: relative;
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .navigation .border::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #2691e9;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+  }
+  .navigation .border:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .link-imgs {
+    display: flex;
+  }
+  .img-linkedin, .img-github {
+    width: 3rem;
+    border-radius: 50%;
+  }
+  .img-linkedin:hover, .img-github:hover {
+    transform: scale(1.2);
+    transition: all 1.5s;
+  }
+  .seta{
+    bottom: 14px;
+    cursor: pointer;
+    position: fixed;
+    right: 22px;
+    z-index: 3;
+  }
+  .img-seta {
+    width: 2rem;
+    border-radius: 50%;
+  }
+  .bolhas {
+    position: absolute;
+    display: flex;
+    width: 100%;
+  }
+  .bolhas span {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #fff7,
+    0 0 50px #fff,
+    0 0 100px #fff;
+    animation: animar calc(30s / var(--i)) linear infinite;
+  }
+  @keyframes animar {
+    0% {
+        transform: translateY(400vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(0.3);
+    }
+  }
+  .bolhas span:nth-of-type(even) {
+    background: #2691e9;
+    box-shadow: 0 0 0 10px #2691e944,
+    0 0 50px #2691e9,
+    0 0 100px #2691e9;
+  }
+  #first-page {
+    width: 100%;
+    min-height: 100vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
+  }
+  .container1 p {
+    font-size: 2.6rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container1 p span.typed-text {
+    font-weight: normal;
+    color: #2691e9;
+  }
+  .container1 p span.cursor {
+    display: inline-block;
+    background-color: #2691e9;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container1 p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #2691e9; }
+    49% { background-color: #2691e9; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #2691e9; }
+  }
+  .btn-contact {
+ margin: 2rem 0rem 3rem 14rem;
+  }
+  .contact {
+    width: 13rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background:transparent;
+    border: 2px solid #2691e9;
+    transition: .5s;
+  }
+  .text-btn {
+    color: #2691e9;
+    text-decoration: none;
+  }
+  .tittle2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat';
+  }
+  .p2 {
+    color: white;
+    padding-top: 1rem;
+    text-align: left;
+  }
+  #presentation {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .me-img{
+    display: flex;
+    justify-content: center;
+  }
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .image {
+    width: 20rem;
+    border-radius: 1.2rem;
+  }
+  .image:hover {
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.623);
+  }
+  .text-me{
+    width: 80%;
+    padding-top: 1rem;
+    margin-left: 6rem;
+    font-size: 1.2rem;
+  } 
+  #skills {
+   width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } 
+  .tittle-skills {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+  .section-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10rem 0 10rem 8rem;
+    position: relative;
+  }
+  dialog {
+    width: 80%;
+    height: 75%;
+    padding: auto;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(37, 36, 36, 0.5);
+    background:transparent;
+    backdrop-filter: blur(2rem);
+  }
+  dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+  }
+  #btn-img-js, #btn-img-react, #btn-img-html, #btn-img-css{
+    border: #1a1919;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .img-js:hover, .img-react:hover, .img-html:hover, .img-css:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow:  0 0 2rem rgba(245, 245, 245, 0.479);
+  }
+  .img-js, .img-react, .img-html, .img-css {
+    border-radius: 1rem;
+    width: 12rem;
+    image-rendering: optimizeQuality;
+  }
+  .btn-fechar {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    justify-content: end;
+  }
+  #fechar-modal {
+    background-color: #dbdada00;
+    border: none;
+  }
+  .img-btn{
+    width: 1.5rem;
+  }
+  .img-btn:hover {
+    cursor: pointer;
+    transform: scale(1.6);
+    transition: all 2s;
+  }
+  .tittle-Js {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(255, 255, 0, 0.438);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .tittle-React {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgb(111, 111, 235);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .tittle-html{
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(255, 0, 0, 0.589);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .tittle-css {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(50, 23, 148, 0.589);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .paragrafo-Js, .paragrafo-react, .paragrafo-html, .paragrafo-css{
+    text-align:center;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    font-family: 'Montserrat';
+    color: #fff;
+  }
+  
+  #work{
+    width: 100%;
+    min-height:100vh;
+  
+  }
+  .tittle-projetos {
+    text-align: center;
+    color: rgb(43, 144, 226);
+    padding-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Montserrat';
+  }
+  .container-projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0rem 3rem 7rem;   
+    justify-content: space-evenly;   
+  }
+  .projeto-1 ,.projeto-4 .projeto-3 .projeto-2  {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .img-projeto1{
+    border-radius: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 1.2rem;
+    width: 12rem;
+    position: relative;
+  }
+  .img-projeto1:hover{
+    transform: scale(1.1);
+    transition: all 2s;
+    box-shadow: 0 0rem 1rem rgba(255, 255, 255, 0.651);
+  }  
+  #contact{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#0d111a;
+    justify-content: center;
+  }
+  .conjunto-contatos {
+    display: flex;
+    flex-direction:row;
+    margin-top: 3rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .container-contact {
+    width: 100%;
+    display: flex;
+  }
+  .tittle-contact{
+    color: #fff;
+    font-family: 'Montserrat';
+  }
+  .text-contact {
+    font-size: 1em;
+    color: white;
+  }
+  .img-contact{
+    border-radius: 20%;
+     width: 2rem;
+     margin-right: 0.3rem;
+     margin-left: 1rem;
+  }
+}
+@media (min-width: 1410px) {
+  .bolhas {
+    width: 100%;
+  }
+  @keyframes animar {
+    0% {
+        transform: translateY(400vh) scale(0);
+    }
+    100% {
+        transform: translateY(-10vh) scale(0.3);
+    }
+  }
+
+  header {
+    width: 10%;
+    height: 100vh;
+  }
+  .navigation  {
+    width: 10%;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem ;
+    justify-content: space-evenly;
+    background-color: #00000071;
+  }
+  .navigation .border {
+    position: relative;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .navigation .border::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #2691e9;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+  }
+  .navigation .border:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  .img-linkedin, .img-github {
+    width: 3rem;
+    border-radius: 50%;
+  }
+  .img-linkedin:hover, .img-github:hover {
+    transform: scale(1.2);
+    transition: all 1.5s;
+  }
+  .seta{
+    bottom: 14px;
+    cursor: pointer;
+    position: fixed;
+    right: 22px;
+    z-index: 3;
+  }
+  .img-seta {
+    width: 2rem;
+    border-radius: 50%;
+  }
+  .img-seta:hover{
+    transform: scale(1.2);
+    transition: all 1.5s;
+    box-shadow: 0 0 0.5em #2691e9;
+  }
+  #first-page {
+    width: 100%;
+    min-height: 100vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 10rem;
+    margin-top: 15rem;
+  }
+  .container1 p {
+    font-size: 4rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container1 p span.typed-text {
+    font-weight: normal;
+    color: #2691e9;
+  }
+  .container1 p span.cursor {
+    display: inline-block;
+    background-color: #2691e9;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container1 p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #2691e9; }
+    49% { background-color: #2691e9; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #2691e9; }
+  }
+  .btn-contact {
+    margin-top: 1rem;
+    margin-left: 12rem;
+  }
+  .contact {
+    width: 14rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background:transparent;
+    border: 2px solid #2691e9;
+    transition: .5s;
+  }
+  .contact:hover{
+    color: white;
+    box-shadow: 0 0 4px white;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 1.2s;
+  }
+  .text-btn {
+    color: #2691e9;
+    text-decoration: none;
+  }
+
+  #presentation {
+    width: 100%;
+    min-height: 100vh;
+  }
+  #about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 0 1rem 0 8rem;
+  }  
+  .tittle2{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 0.5rem rgba(221, 221, 221, 0.253);
+    font-family: 'Montserrat';
+  }
+  .p2 {
+    color: white;
+    padding-top: 1rem;
+    text-align: left;
+  }
+  .me-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+  }
+  .image {
+    width: 20rem;
+    border-radius: 1.2rem;
+  }
+  .image:hover {
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.623);
+  }
+  .text-me{
+    width: 60%;
+    padding-top: 2rem;
+    padding-right: 5rem;
+    font-size: 1.2rem;
+  } 
+  #skills {
+   width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  } 
+  .tittle-skills {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Montserrat';
+    text-align: center;
+  }
+  .section-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10rem 0 10rem 8rem;
+    position: relative;
+  }
+  dialog {
+    width: 60%;
+    height: 65%;
+    padding: auto;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(37, 36, 36, 0.5);
+    background:transparent;
+    backdrop-filter: blur(2rem);
+  }
+  dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+  }
+  #btn-img-js, #btn-img-react, #btn-img-html, #btn-img-css{
+    border: #1a1919;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  .img-js:hover, .img-react:hover, .img-html:hover, .img-css:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow:  0 0 2rem rgba(245, 245, 245, 0.479);
+  }
+  .img-js, .img-react, .img-html, .img-css {
+    border-radius: 1rem;
+    width: 12rem;
+    image-rendering: optimizeQuality;
+  }
+  .btn-fechar {
+    padding: 1rem 1rem 1rem 0;
+    display: flex;
+    justify-content: end;
+  }
+  #fechar-modal {
+    background-color: #dbdada00;
+    border: none;
+  }
+  .img-btn{
+    width: 1.5rem;
+  }
+  .img-btn:hover {
+    cursor: pointer;
+    transform: scale(1.6);
+    transition: all 2s;
+  }
+  .tittle-Js {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(255, 255, 0, 0.438);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .tittle-React {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgb(111, 111, 235);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .tittle-html{
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(255, 0, 0, 0.589);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .tittle-css {
+    font-family: 'Montserrat';
+    text-shadow: 0 0 1rem rgba(50, 23, 148, 0.589);
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .paragrafo-Js, .paragrafo-react, .paragrafo-html, .paragrafo-css{
+    text-align:center;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    font-family: 'Montserrat';
+    color: #fff;
+  }
+  
+  #work{
+    width: 100%;
+    min-height:100vh;
+  
+  }
+  .tittle-projetos {
+    text-align: center;
+    color: rgb(43, 144, 226);
+    padding-top: 2rem;
+    font-size: 3.2rem;
+    font-family: 'Montserrat';
+  }
+  .container-projetos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3rem 0rem 3rem 7rem;   
+    justify-content: space-evenly;   
+  }
+  .projeto-1 ,.projeto-4 .projeto-3 .projeto-2  {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .img-projeto1{
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1.2rem;
+    width: 14rem;
+    position: relative;
+  }
+  .img-projeto1:hover{
+    transform: scale(1.1);
+    transition: all 1.8s;
+    box-shadow: 0 0 0.5rem #fff;
+  }
+  #contact{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#0d111a;
+    justify-content: center;
+  }
+  .conjunto-contatos {
+    display: flex;
+    flex-direction:row;
+    margin-top: 3rem;
+  }
+  .container-contact, .container-contact2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .tittle-contact{
+    color: #fff;
+    font-family: 'Montserrat';
+  }
+  .text-contact {
+    font-size: 1em;
+    color: white;
+  }
+  .img-contact{
+    border-radius: 50%;
+     width: 2rem;
+     margin-right: 0.6rem;
+     margin-left: 1rem;
+  }
+  .img-contact:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.4rem #fff;
+    transform: scale(1.2);
+    transition: all 2s;
+  }
 }
