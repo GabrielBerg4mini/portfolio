@@ -28,6 +28,7 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
           top: "80%",
           color: "#b1b1ff",
           fontSize: "1rem",
+
           ...tooltipAnimation,
         }}
       >

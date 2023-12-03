@@ -22,12 +22,13 @@ const SectionStars = styled.section`
 const ContainerButtonStopStars = styled.section`
   position: fixed;
   right: 16px;
-  top: 6px;
+  top: 16px;
+  z-index: 9999;
   svg {
     cursor: pointer;
-
+    transition: all 1s;
     &:hover {
-      color: ${secondColor};
+      color: #242323;
       transform: scale(1.05);
       transition: transform 0.8s;
     }
@@ -44,9 +45,10 @@ const Label = styled.label`
   background: #0e012b;
   opacity: 0;
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   right: 45px;
   animation: ${fadeIn} 1s forwards;
+  z-index: 9999;
 `
 
 const Input = styled.input`

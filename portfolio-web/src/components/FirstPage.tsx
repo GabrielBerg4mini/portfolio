@@ -75,6 +75,7 @@ const LinksSocias = styled.a`
 const Img = styled.img`
   animation: border 6s infinite ease-in-out;
   transition: all 1s ease;
+
   @keyframes border {
     0%,
     100% {
@@ -154,7 +155,7 @@ const TypeWriter: React.FC = () => {
   }, [type, textArray.length, newTextDelay])
 
   return (
-    <Container id="firstPage"> 
+    <Container id="firstPage">
       <section>
         <H1>
           Prazer, sou o Gabriel👋

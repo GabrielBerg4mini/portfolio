@@ -1,8 +1,7 @@
 import { useState } from "react"
 import { useSpring, animated } from "react-spring"
-import { Menu } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import styled from "styled-components"
-import { secondColor } from "./colors"
 
 const ContainerHeaderNav = styled.section`
   width: 50%;
@@ -12,35 +11,50 @@ const ContainerHeaderNav = styled.section`
 `
 
 const ContainerNav = styled.section`
-  position: relative;
+  padding-left: 1rem;
 
   svg {
     cursor: pointer;
+    transition: all 1s;
     &:hover {
-      color: ${secondColor};
+      color: #242323;
     }
   }
 `
 
-const NavLinks = styled(animated.nav)`
+const ContainerBackgroundNav = styled(animated.section)`
   position: absolute;
-  top: 2.5rem;
 
-  padding: 10px;
-  border: 1px solid #ccc;
-  width: 150px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-left: -1rem;
+  background: #6464fa97;
+  backdrop-filter: blur(12px);
+  width: 100%;
+  top: 3.5rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`
+
+const NavLinks = styled.nav`
+  font-size: 2rem;
+  text-align: center;
 `
 const Li = styled.li`
-  width: 100%;
+  margin-top: 1.2rem;
 `
-
 const BorderLink = styled.a`
   position: relative;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  line-height: 2rem;
-  width: 100%;
+  line-height: 4rem;
+
+  font-weight: 600;
+  &:hover {
+    transition: all 0.8s;
+    color: #28034b;
+  }
 
   &:after {
     content: "";
@@ -48,8 +62,8 @@ const BorderLink = styled.a`
     left: 0;
     bottom: -6px;
     width: 100%;
-    height: 2px;
-    background: ${secondColor};
+    height: 3px;
+    background: #28034b;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -61,11 +75,28 @@ const BorderLink = styled.a`
     transform-origin: left;
   }
 `
+const ButtonLinkNav = styled.a`
+  padding: 0.5rem 2rem;
 
+  border-radius: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #28034b;
+  transition: all 1s;
+  color: white;
+  font-weight: 600;
+  background: #28034b;
+
+  &:hover {
+    transition: all 0.8s;
+    background: transparent;
+    color: #28034b;
+  }
+`
 const Header = () => {
   const [navVisible, setNavVisible] = useState(false)
 
   const navAnimation = useSpring({
+    display: navVisible ? "flex" : "none",
     opacity: navVisible ? 1 : 0,
     transform: navVisible ? "translateY(0)" : "translateY(-10px)",
   })
@@ -78,26 +109,35 @@ const Header = () => {
     <ContainerHeaderNav>
       <ContainerNav>
         <section onClick={toggleNav}>
-          {" "}
-          <Menu />
+          {navVisible ? (
+            <span>
+              <X />
+            </span>
+          ) : (
+            <Menu />
+          )}
         </section>
-
-        <NavLinks style={navAnimation}>
-          <ul>
-            <Li>
-              {" "}
-              <BorderLink href="">Habilidades</BorderLink>{" "}
-            </Li>
-            <Li>
-              {" "}
-              <BorderLink href="">Projetos</BorderLink>{" "}
-            </Li>
-            <Li>
-              {" "}
-              <BorderLink href="">Contato</BorderLink>{" "}
-            </Li>
-          </ul>
-        </NavLinks>
+        <ContainerBackgroundNav style={navAnimation}>
+          <NavLinks>
+            <h2>Bem vindo ao Meu Portfólio 🚀 </h2>
+            <ul>
+              <li>
+                {" "}
+                <BorderLink href="">Habilidades</BorderLink>{" "}
+              </li>
+              <li>
+                {" "}
+                <BorderLink href="">Projetos</BorderLink>{" "}
+              </li>
+              <Li>
+                {" "}
+                <ButtonLinkNav href="mailto:gabrielbergaminioficial@gmail.com">
+                  Contato
+                </ButtonLinkNav>{" "}
+              </Li>
+            </ul>
+          </NavLinks>
+        </ContainerBackgroundNav>
       </ContainerNav>
 
       <section>

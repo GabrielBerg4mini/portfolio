@@ -11,8 +11,11 @@ import { secondColor } from "./components/colors"
 const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
-  padding: 0.5rem 1rem;
-  border-bottom: 1px solid ${secondColor};
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  background: ${secondColor};
+  z-index: 9998;
 `
 
 const Wrapper = styled.main`
