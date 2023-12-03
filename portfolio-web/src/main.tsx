@@ -2,20 +2,19 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import Stars from "./components/Stars"
-import Header from "./components/Header"
 import FirstPage from "./components/FirstPage"
+import Header from "./components/header"
 import "./Global.css"
 import styled from "styled-components"
+import { secondColor } from "./components/colors"
 
 const HeaderContainer = styled.header`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 10%;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.283);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid ${secondColor};
 `
+
 const Wrapper = styled.main`
   margin: 0 auto;
   min-height: 298px;
@@ -25,7 +24,6 @@ const Wrapper = styled.main`
 const ContainerContent = styled.section`
   width: 100%;
   min-height: 100vh;
-  background: black;
 `
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

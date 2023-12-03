@@ -1,57 +1,48 @@
-import "../Global.css"
-import { styled } from "styled-components"
-import { Github, Linkedin } from "lucide-react"
-import { primaryColor, secondColor } from "./colors"
+import { useState } from "react"
+import { useSpring, animated } from "react-spring"
+import { Menu } from "lucide-react"
+import styled from "styled-components"
+import { secondColor } from "./colors"
 
-const ContainerNavAndImgs = styled.nav`
+const ContainerHeaderNav = styled.section`
+  width: 50%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 1rem;
+  justify-content: space-between;
 `
 
-const UlNavigation = styled.ul`
-  height: 95%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-`
-const LinkContato = styled.a`
+const ContainerNav = styled.section`
+  position: relative;
+
   svg {
-    width: 30px;
-    height: 30px;
-    transition: all 0.3s ease-in;
-  }
-
-  &:hover {
-    svg {
-      transform: scale(1.1);
-      transition: all 0.6s ease-in;
+    cursor: pointer;
+    &:hover {
       color: ${secondColor};
     }
   }
 `
-const ContainerLinksHeader = styled.section`
-  height: 15%;
-  display: flex;
-  gap: 1rem;
+
+const NavLinks = styled(animated.nav)`
+  position: absolute;
+  top: 2.5rem;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 150px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 `
-const NavLinksHeader = styled.a`
-  color: ${primaryColor};
+const Li = styled.li`
+  width: 100%;
+`
+
+const BorderLink = styled.a`
   position: relative;
-  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  line-height: 2rem;
+  width: 100%;
 
-  &:hover {
-    color: ${secondColor};
-    transition: all 0.8s;
-  }
-
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     left: 0;
@@ -62,45 +53,60 @@ const NavLinksHeader = styled.a`
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
-    transition: transform 0.8s;
+    transition: transform 0.5s;
   }
 
-  &:hover::after {
-    color: ${secondColor};
+  &:hover:after {
     transform: scaleX(1);
     transform-origin: left;
   }
 `
 
-export default function Header() {
+const Header = () => {
+  const [navVisible, setNavVisible] = useState(false)
+
+  const navAnimation = useSpring({
+    opacity: navVisible ? 1 : 0,
+    transform: navVisible ? "translateY(0)" : "translateY(-10px)",
+  })
+
+  function toggleNav() {
+    setNavVisible(!navVisible)
+  }
+
   return (
-    <ContainerNavAndImgs>
-      <UlNavigation>
-        <li>
-          <NavLinksHeader href="#sobre">SOBRE</NavLinksHeader>
-        </li>
-        <li>
-          <NavLinksHeader href="#habilidade">HABILIDADES</NavLinksHeader>
-        </li>
-        <li>
-          <NavLinksHeader href="#projetos">PROJETOS</NavLinksHeader>
-        </li>
-        <li>
-          <NavLinksHeader href="#contato">CONTATO</NavLinksHeader>
-        </li>
-      </UlNavigation>
-      <ContainerLinksHeader>
-        <LinkContato href="https://github.com/GabrielBerg4mini" target="_blank">
-          <Github />
-        </LinkContato>
-        <LinkContato
-          href="https://www.linkedin.com/in/gabriel-bergamini-1424b323b/"
-          target="_blank"
-        >
+    <ContainerHeaderNav>
+      <ContainerNav>
+        <section onClick={toggleNav}>
           {" "}
-          <Linkedin />
-        </LinkContato>
-      </ContainerLinksHeader>
-    </ContainerNavAndImgs>
+          <Menu />
+        </section>
+
+        <NavLinks style={navAnimation}>
+          <ul>
+            <Li>
+              {" "}
+              <BorderLink href="">Habilidades</BorderLink>{" "}
+            </Li>
+            <Li>
+              {" "}
+              <BorderLink href="">Projetos</BorderLink>{" "}
+            </Li>
+            <Li>
+              {" "}
+              <BorderLink href="">Contato</BorderLink>{" "}
+            </Li>
+          </ul>
+        </NavLinks>
+      </ContainerNav>
+
+      <section>
+        <a href="#">
+          <img src="" alt="Logo" />
+        </a>
+      </section>
+    </ContainerHeaderNav>
   )
 }
+
+export default Header

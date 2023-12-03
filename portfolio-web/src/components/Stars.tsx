@@ -20,8 +20,8 @@ const SectionStars = styled.section`
 `
 
 const ContainerButtonStopStars = styled.section`
-  position: absolute;
-  right: 6px;
+  position: fixed;
+  right: 16px;
   top: 6px;
   svg {
     cursor: pointer;
@@ -103,8 +103,8 @@ export default function Stars() {
 
   return (
     <SectionStars>
-      <ContainerButtonStopStars>
-        <Settings onClick={handleSettingsClick} />
+      <ContainerButtonStopStars onClick={handleSettingsClick}>
+        <Settings />
       </ContainerButtonStopStars>
       {labelVisible && (
         <Label>
