@@ -80,7 +80,7 @@ const ButtonLinkNav = styled.a`
 
   border-radius: 1rem;
   margin-top: 1rem;
-  border: 1px solid #28034b;
+
   transition: all 1s;
   color: white;
   font-weight: 600;
@@ -88,8 +88,9 @@ const ButtonLinkNav = styled.a`
 
   &:hover {
     transition: all 0.8s;
+    border: 1px solid #fff;
     background: transparent;
-    color: #28034b;
+    color: #fff;
   }
 `
 const Header = () => {
