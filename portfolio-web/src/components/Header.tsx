@@ -1,3 +1,4 @@
+import "../Global.css"
 import { useState } from "react"
 import { useSpring, animated } from "react-spring"
 import { Menu, X } from "lucide-react"

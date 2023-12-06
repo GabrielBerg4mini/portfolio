@@ -49,6 +49,7 @@ const Label = styled.label`
   right: 45px;
   animation: ${fadeIn} 1s forwards;
   z-index: 9999;
+  position: fixed;
 `
 
 const Input = styled.input`

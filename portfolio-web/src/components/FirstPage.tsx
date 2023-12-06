@@ -52,11 +52,11 @@ const H1 = styled.h1`
   overflow: hidden;
 `
 const ContainerBiografia = styled.section`
-  width: 650px;
+  width: 670px;
   text-align: justify;
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #c9c7c7;
   }
 `
@@ -83,7 +83,7 @@ const Img = styled.img`
     }
     25%,
     75% {
-      border-radius: 12rem 18rem 12rem 16rem;
+      border-radius: 14rem 18rem 12rem 16rem;
     }
     50% {
       border-radius: 15rem 20rem 18rem 22rem;

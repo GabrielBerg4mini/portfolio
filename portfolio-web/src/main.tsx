@@ -4,6 +4,8 @@ import ReactDOM from "react-dom/client"
 import Stars from "./components/Stars"
 import FirstPage from "./components/FirstPage"
 import Header from "./components/header"
+import ProjectPage from "./components/projectPage"
+import Skills from "./components/skills"
 import "./Global.css"
 import styled from "styled-components"
 import { secondColor } from "./components/colors"
@@ -37,6 +39,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Wrapper>
       <ContainerContent>
         <FirstPage />
+        <ProjectPage />
+        <Skills />
       </ContainerContent>
     </Wrapper>
   </React.StrictMode>
