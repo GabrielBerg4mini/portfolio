@@ -200,7 +200,7 @@ const TypeWriter: React.FC = () => {
       </section>
       <section>
         <a href="https://github.com/GabrielBerg4mini" target="_blank">
-          <Img src="./src/assets/eu.jpg" alt="Eu" />
+          <Img src="./assets/eu.jpg" alt="Eu" />
         </a>
       </section>
     </Container>
