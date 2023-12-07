@@ -3,13 +3,15 @@
     "development"
   ],
   "hints": {
-    "typescript-config/is-valid": "off",
+    "disown-opener": "off",
+    "no-inline-styles": "off",
     "axe/name-role-value": [
       "default",
       {
         "link-name": "off"
       }
     ],
-    "disown-opener": "off"
+    "typescript-config/is-valid": "off",
+    "axe/structure": "off"
   }
 }
