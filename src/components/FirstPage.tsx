@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react"
 import { motion } from "framer-motion"
 import Tooltip from "../hooks/tooltip"
 import { secondColor } from "./colors"
+import minhaImagem from "../assets/eu.jpg"
 
 const Container = styled.div`
   width: 100%;
@@ -55,7 +56,7 @@ const ContainerBiografia = styled.section`
   width: 670px;
   text-align: justify;
 
-  p {
+  div {
     font-size: 1.4rem;
     color: #c9c7c7;
   }
@@ -163,7 +164,7 @@ const TypeWriter: React.FC = () => {
           <span className="cursor">&nbsp;</span>
         </H1>
         <ContainerBiografia>
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -195,12 +196,12 @@ const TypeWriter: React.FC = () => {
                 <Mail />
               </LinksSocias>
             </Tooltip>
-          </motion.p>
+          </motion.div>
         </ContainerBiografia>
       </section>
       <section>
         <a href="https://github.com/GabrielBerg4mini" target="_blank">
-          <Img src="./assets/eu.jpg" alt="Eu" />
+          <Img src={minhaImagem} alt="Eu" />
         </a>
       </section>
     </Container>

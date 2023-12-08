@@ -15,13 +15,13 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
   })
 
   return (
-    <div
+    <section
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{ position: "relative", display: "inline-block" }}
     >
       {children}
-      <animated.div
+      <animated.section
         style={{
           position: "absolute",
           left: "50%",
@@ -33,8 +33,8 @@ const Tooltip: React.FC<TooltipProps> = ({ text, children }) => {
         }}
       >
         {text}
-      </animated.div>
-    </div>
+      </animated.section>
+    </section>
   )
 }
 

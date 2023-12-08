@@ -1,6 +1,18 @@
 import styled from "styled-components"
 import "../Global.css"
 import { secondColor, styledHabilidade } from "./colors"
+import Js from "../assets/svgs/icon-javascript.svg"
+import Css from "../assets/svgs/icon-css.svg"
+import Html from "../assets/svgs/icon-html.svg"
+import CssInJs from "../assets/svgs/icon-css-in-js.svg"
+import React from "../assets/svgs/icon-react.svg"
+import Tailwindcss from "../assets/svgs/icon-tailwindcss.svg"
+import Bootstrap from "../assets/svgs/icon-bootstrap.svg"
+import Wordpress from "../assets/svgs/icon-wordpress.svg"
+import Next from "../assets/svgs/icon-next.svg"
+import Node from "../assets/svgs/icon-node.svg"
+import Typescript from "../assets/svgs/icon-typescript.svg"
+import Figma from "../assets/svgs/icon-figma.svg"
 
 const ContainerPrincipal = styled.section`
   width: 100%;
@@ -49,6 +61,7 @@ const SectionIconSkills = styled.section`
     border-bottom: 2px solid ${secondColor};
   }
 `
+
 const Skills = () => {
   return (
     <ContainerPrincipal>
@@ -57,75 +70,57 @@ const Skills = () => {
       <SectionHabilidades>
         <SectionIconSkills>
           <p>JavaScript</p>
-          <img
-            src="./src/assets/svgs/icon-javascript.svg"
-            alt="Icon JavaScript"
-          />
+          <img src={Js} alt="Icon Javascript" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>TailwindCSS</p>
-          <img
-            src="./src/assets/svgs/icon-tailwindcss.svg"
-            alt="Icon tailwindcss"
-          />
+          <img src={Tailwindcss} alt="Icon tailwindcss" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>CSS-in-JS</p>
-          <img
-            src="./src/assets/svgs/icon-css-in-js.svg"
-            alt="Icon CSS-in-JS"
-          />
+          <img src={CssInJs} alt="Icon CSS-in-JS" />
         </SectionIconSkills>
 
         <SectionIconSkills>
           <p>BootsTrap</p>
-          <img
-            src="./src/assets/svgs/icon-bootstrap.svg"
-            alt="Icon Bootstrap"
-          />
+          <img src={Bootstrap} alt="Icon Bootstrap" />
         </SectionIconSkills>
 
         <SectionIconSkills>
           <p>WordPress</p>
-          <img
-            src="./src/assets/svgs/icon-wordpress.svg"
-            alt="Icon WordPress"
-          />
+          <img src={Wordpress} alt="Icon WordPress" />
         </SectionIconSkills>
 
         <SectionIconSkills>
           <p>HTML</p>
-          <img src="./src/assets/svgs/icon-html.svg" alt="Icon HTML" />
+          <img src={Html} alt="Icon HTML" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>CSS</p>
-          <img src="./src/assets/svgs/icon-css.svg" alt="Icon CSS" />
+          <img src={Css} alt="Icon CSS" />
         </SectionIconSkills>
       </SectionHabilidades>
       <H2>Estudando</H2>
       <SectionEstudos>
         <SectionIconSkills>
           <p>ReactJS</p>
-          <img src="./src/assets/svgs/icon-react.svg" alt="Icon React" />
+          <img src={React} alt="Icon React" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>NextJs</p>
-          <img src="./src/assets/svgs/icon-next.svg" alt="Icon Next" />
+          <img src={Next} alt="Icon Next" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>TypeScript</p>
-          <img
-            src="./src/assets/svgs/icon-typescript.svg"
-            alt="Icon TypeScript"
-          />
+          <img src={Typescript} alt="Icon TypeScript" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>NodeJS</p>
-          <img src="./src/assets/svgs/icon-node.svg" alt="Icon NodeJS" />
+          <img src={Node} alt="Icon NodeJS" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>Figma</p>
-          <img src="./src/assets/svgs/icon-figma.svg" alt="Icon Figma" />
+          <img src={Figma} alt="Icon Figma" />
         </SectionIconSkills>
       </SectionEstudos>
     </ContainerPrincipal>
