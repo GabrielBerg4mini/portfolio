@@ -3,6 +3,7 @@ import { useState } from "react"
 import { useSpring, animated } from "react-spring"
 import { Menu, X } from "lucide-react"
 import styled from "styled-components"
+import React from "react"
 
 const ContainerHeaderNav = styled.section`
   width: 51.4%;
