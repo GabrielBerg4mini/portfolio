@@ -1,8 +1,18 @@
-import React from "react"
 import styled from "styled-components"
 import "../Global.css"
 import { secondColor, styledHabilidade } from "./colors"
-
+import css from "../assets/svgs/icon-css.svg"
+import styledComponent from "../assets/svgs/icon-styled-components.svg"
+import js from "../assets/svgs/icon-javascript.svg"
+import node from "../assets/svgs/icon-node.svg"
+import next from "../assets/svgs/icon-next.svg"
+import tailwindcss from "../assets/svgs/icon-tailwindcss.svg"
+import bootstrap from "../assets/svgs/icon-bootstrap.svg"
+import figma from "../assets/svgs/icon-figma.svg"
+import tp from "../assets/svgs/icon-typescript.svg"
+import wordpress from "../assets/svgs/icon-wordpress.svg"
+import reactIcon from "../assets/svgs/icon-react.svg"
+import htmlIcon from "../assets/svgs/icon-html.svg"
 const ContainerPrincipal = styled.section`
   width: 100%;
   height: 100vh;
@@ -53,63 +63,63 @@ const SectionIconSkills = styled.section`
 
 const Skills = () => {
   return (
-    <ContainerPrincipal>
+    <ContainerPrincipal id="habilidades">
       <H2>Habilidades</H2>
 
       <SectionHabilidades>
         <SectionIconSkills>
           <p>JavaScript</p>
-          <img src="" alt="Icon Javascript" />
+          <img src={js} alt="Icon Javascript" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>TailwindCSS</p>
-          <img src="" alt="Icon tailwindcss" />
+          <img src={tailwindcss} alt="Icon tailwindcss" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>CSS-in-JS</p>
-          <img src="" alt="Icon CSS-in-JS" />
+          <img src={styledComponent} alt="Icon CSS-in-JS" />
         </SectionIconSkills>
 
         <SectionIconSkills>
           <p>BootsTrap</p>
-          <img src="" alt="Icon Bootstrap" />
+          <img src={bootstrap} alt="Icon Bootstrap" />
         </SectionIconSkills>
 
         <SectionIconSkills>
           <p>WordPress</p>
-          <img src="" alt="Icon WordPress" />
+          <img src={wordpress} alt="Icon WordPress" />
         </SectionIconSkills>
 
         <SectionIconSkills>
           <p>HTML</p>
-          <img src="" alt="Icon HTML" />
+          <img src={htmlIcon} alt="Icon HTML" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>CSS</p>
-          <img src="" alt="Icon CSS" />
+          <img src={css} alt="Icon CSS" />
         </SectionIconSkills>
       </SectionHabilidades>
       <H2>Estudando</H2>
       <SectionEstudos>
         <SectionIconSkills>
           <p>ReactJS</p>
-          <img src="" alt="Icon React" />
+          <img src={reactIcon} alt="Icon React" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>NextJs</p>
-          <img src="" alt="Icon Next" />
+          <img src={next} alt="Icon Next" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>TypeScript</p>
-          <img src="" alt="Icon TypeScript" />
+          <img src={tp} alt="Icon TypeScript" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>NodeJS</p>
-          <img src="" alt="Icon NodeJS" />
+          <img src={node} alt="Icon NodeJS" />
         </SectionIconSkills>
         <SectionIconSkills>
           <p>Figma</p>
-          <img src="" alt="Icon Figma" />
+          <img src={figma} alt="Icon Figma" />
         </SectionIconSkills>
       </SectionEstudos>
     </ContainerPrincipal>

@@ -3,10 +3,9 @@ import { useState } from "react"
 import { useSpring, animated } from "react-spring"
 import { Menu, X } from "lucide-react"
 import styled from "styled-components"
-import React from "react"
 
 const ContainerHeaderNav = styled.section`
-  width: 51.4%;
+  width: 62%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,29 +107,25 @@ const Header = () => {
     setNavVisible(!navVisible)
   }
 
+  const A = styled.a`
+    font-size: 1.5rem;
+    font-weight: 600;
+  `
   return (
     <ContainerHeaderNav>
       <ContainerNav>
-        <section onClick={toggleNav}>
-          {navVisible ? (
-            <span>
-              <X />
-            </span>
-          ) : (
-            <Menu />
-          )}
-        </section>
+        <section onClick={toggleNav}>{navVisible ? <X /> : <Menu />}</section>
         <ContainerBackgroundNav style={navAnimation}>
           <NavLinks>
             <h2>Bem vindo ao Meu Portfólio 🚀 </h2>
             <ul>
               <li>
                 {" "}
-                <BorderLink href="">Habilidades</BorderLink>{" "}
+                <BorderLink href="#habilidades">Habilidades</BorderLink>{" "}
               </li>
               <li>
                 {" "}
-                <BorderLink href="">Projetos</BorderLink>{" "}
+                <BorderLink href="#projetos">Projetos</BorderLink>{" "}
               </li>
               <Li>
                 {" "}
@@ -144,9 +139,7 @@ const Header = () => {
       </ContainerNav>
 
       <section>
-        <a href="#">
-          <img src="" alt="Logo" />
-        </a>
+        <A href="#">Gabriel de Souza Bergamini</A>
       </section>
     </ContainerHeaderNav>
   )
