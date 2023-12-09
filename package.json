@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-spring": "^9.7.3",
     "react-star-field-canvas": "^1.4.0",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.1",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "devDependencies": {
     "@types/istanbul-lib-coverage": "^2.0.6",

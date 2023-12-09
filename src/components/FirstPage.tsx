@@ -5,7 +5,8 @@ import { Github, Linkedin, Mail } from "lucide-react"
 import { motion } from "framer-motion"
 import Tooltip from "../hooks/tooltip"
 import { secondColor } from "./colors"
-import minhaImagem from "../assets/eu.jpg"
+
+import React from "react"
 
 const Container = styled.div`
   width: 100%;
@@ -201,7 +202,7 @@ const TypeWriter: React.FC = () => {
       </section>
       <section>
         <a href="https://github.com/GabrielBerg4mini" target="_blank">
-          <Img src={minhaImagem} alt="Eu" />
+          <Img src="./src/assets/eu.jpg" alt="Eu" />
         </a>
       </section>
     </Container>
