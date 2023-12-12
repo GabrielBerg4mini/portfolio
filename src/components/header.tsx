@@ -94,6 +94,10 @@ const ButtonLinkNav = styled.a`
     color: #fff;
   }
 `
+const A = styled.a`
+  font-size: 1.5rem;
+  font-weight: 600;
+`
 const Header = () => {
   const [navVisible, setNavVisible] = useState(false)
 
@@ -107,10 +111,6 @@ const Header = () => {
     setNavVisible(!navVisible)
   }
 
-  const A = styled.a`
-    font-size: 1.5rem;
-    font-weight: 600;
-  `
   return (
     <ContainerHeaderNav>
       <ContainerNav>
@@ -139,7 +139,7 @@ const Header = () => {
       </ContainerNav>
 
       <section>
-        <A href="#">Gabriel de Souza Bergamini</A>
+        <A href="#firstPage">Gabriel de Souza Bergamini</A>
       </section>
     </ContainerHeaderNav>
   )

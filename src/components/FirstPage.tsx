@@ -59,7 +59,7 @@ const ContainerBiografia = styled.section`
 
   div {
     font-size: 1.4rem;
-    color: #c9c7c7;
+    color: #020101;
   }
 `
 const LinksSocias = styled.a`
@@ -69,11 +69,23 @@ const LinksSocias = styled.a`
     color: ${secondColor};
     transition: transform 0.4s ease;
     &:hover {
-      color: #b1b1ff;
+      color: black;
       transform: translateY(-2px);
     }
   }
 `
+const Caption = styled.p`
+  font-size: 1rem;
+  color: ${secondColor};
+  margin-top: 0.5rem;
+
+  a {
+    &:hover {
+      color: #020101;
+    }
+  }
+`
+
 const Img = styled.img`
   animation: border 6s infinite ease-in-out;
   transition: all 1s ease;
@@ -197,6 +209,11 @@ const TypeWriter: React.FC = () => {
                 <Mail />
               </LinksSocias>
             </Tooltip>
+            <Caption>
+              <a href="mailto:gabrielbergaminioficial@gmail.com">
+                Disponível para Freelance
+              </a>
+            </Caption>
           </motion.div>
         </ContainerBiografia>
       </section>

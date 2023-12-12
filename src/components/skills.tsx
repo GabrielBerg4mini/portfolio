@@ -3,6 +3,7 @@ import "../Global.css"
 import { secondColor, styledHabilidade } from "./colors"
 import css from "../assets/svgs/icon-css.svg"
 import styledComponent from "../assets/svgs/icon-styled-components.svg"
+import { useSpring, animated } from "react-spring"
 import js from "../assets/svgs/icon-javascript.svg"
 import node from "../assets/svgs/icon-node.svg"
 import next from "../assets/svgs/icon-next.svg"
@@ -13,12 +14,14 @@ import tp from "../assets/svgs/icon-typescript.svg"
 import wordpress from "../assets/svgs/icon-wordpress.svg"
 import reactIcon from "../assets/svgs/icon-react.svg"
 import htmlIcon from "../assets/svgs/icon-html.svg"
-const ContainerPrincipal = styled.section`
+import { useEffect, useState } from "react"
+
+const ContainerPrincipal = styled(animated.section)`
   width: 100%;
   height: 100vh;
-
   display: grid;
   align-content: center;
+  overflow: hidden;
 `
 
 const H2 = styled.h2`
@@ -35,18 +38,21 @@ const SectionEstudos = styled.article`
   ${styledHabilidade}
 `
 const SectionIconSkills = styled.section`
-  background: #0a0a0a;
+  background: #c0c0c0;
   padding: 0.5rem;
   display: grid;
   justify-items: center;
   align-content: center;
-  border-top-left-radius: 2rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.2rem;
+  border-end-end-radius: 2rem;
   width: 120px;
   height: 130px;
-  border-bottom: 4px solid ${secondColor};
+  border-bottom: 4px solid #313131;
   transition: all 0.5s ease-in-out;
   p {
-    color: ${secondColor};
+    color: #313131;
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
@@ -57,13 +63,39 @@ const SectionIconSkills = styled.section`
   &:hover {
     transition: all 0.5s ease-in-out;
     transform: scale(1.05);
-    border-bottom: 2px solid ${secondColor};
+    border-bottom: 2px solid #313131;
   }
 `
 
 const Skills = () => {
+  const [isVisible, setIsVisible] = useState(false)
+
+  const containerProps = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateX(0%" : "translate(-100%)",
+    from: { opacity: 0, transform: "translateX(-100%)" },
+    delay: 200,
+  })
+
+  useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const handleScroll = () => {
+      const section = document.getElementById("habilidades")
+      if (section) {
+        const rect = section.getBoundingClientRect()
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0
+        setIsVisible(isVisible)
+      }
+    }
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   return (
-    <ContainerPrincipal id="habilidades">
+    <ContainerPrincipal id="habilidades" style={containerProps}>
       <H2>Habilidades</H2>
 
       <SectionHabilidades>

@@ -39,8 +39,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <Wrapper>
       <ContainerContent>
         <FirstPage />
-        <ProjectPage />
         <Skills />
+        <ProjectPage />
       </ContainerContent>
     </Wrapper>
   </React.StrictMode>

@@ -130,7 +130,7 @@ export default function Stars() {
         maxSpeed={10}
         numStars={600}
         trails={true}
-        color={{ r: 100, g: 100, b: 250 }}
+        color={{ r: 0, g: 0, b: 0 }}
         longerTrails={true}
         className="starfield"
       />
