@@ -6,3 +6,12 @@ export const styledHabilidade = {
   "justify-content": "space-around",
   "margin-top": "2rem",
 }
+export const buttonsStyleds = {
+  display: "flex",
+  "align-items": "center",
+  gap: "0.5rem",
+  padding: "0.5rem 2rem",
+  "border-radius": "0.5rem",
+  background: "#6464FA",
+  color: "#fff",
+}

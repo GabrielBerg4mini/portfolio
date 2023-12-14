@@ -22,17 +22,19 @@ const ContainerPrincipal = styled(animated.section)`
   display: grid;
   align-content: center;
   overflow: hidden;
+  padding: 0.5rem;
 `
 
 const H2 = styled.h2`
   text-align: center;
   color: ${secondColor};
   font-size: 1.7rem;
+  margin-bottom: 2rem;
 `
 
 const SectionHabilidades = styled.article`
   ${styledHabilidade}
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 `
 const SectionEstudos = styled.article`
   ${styledHabilidade}

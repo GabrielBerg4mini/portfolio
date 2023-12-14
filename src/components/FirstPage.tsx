@@ -15,6 +15,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 0.5rem;
 
   span.typed-text {
     color: #2691e9;
@@ -59,7 +60,7 @@ const ContainerBiografia = styled.section`
 
   div {
     font-size: 1.4rem;
-    color: #020101;
+    color: #181616;
   }
 `
 const LinksSocias = styled.a`
@@ -69,7 +70,7 @@ const LinksSocias = styled.a`
     color: ${secondColor};
     transition: transform 0.4s ease;
     &:hover {
-      color: black;
+      color: #1b1b1b;
       transform: translateY(-2px);
     }
   }

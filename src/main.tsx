@@ -9,6 +9,7 @@ import Skills from "./components/skills"
 import "./Global.css"
 import styled from "styled-components"
 import { secondColor } from "./components/colors"
+import FooterContainer from "./components/footer"
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -30,6 +31,12 @@ const ContainerContent = styled.section`
   width: 100%;
   min-height: 100vh;
 `
+const Footer = styled.footer`
+  margin-top: 10rem;
+  height: 10vh;
+  width: 100%;
+  background: red;
+`
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <HeaderContainer>
@@ -43,5 +50,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <ProjectPage />
       </ContainerContent>
     </Wrapper>
+    <Footer>
+      <FooterContainer />
+    </Footer>
   </React.StrictMode>
 )
