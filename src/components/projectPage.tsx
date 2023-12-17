@@ -7,6 +7,10 @@ import sportsBrasil from "../assets/project-sports-brasil.jpg"
 import formulario from "../assets/project-formulario.jpg"
 import rocketflix from "../assets/project-rocketflix.jpg"
 import energySouls from "../assets/project-energy-souls.jpg"
+import sportBrasilMobile from "../assets/sportsbrasil-mobile.jpg"
+import formularioMobile from "../assets/formulario-mobile.jpg"
+import rocketflixMobile from "../assets/rocketflix-mobile.jpg"
+import energySoulsMobile from "../assets/energysouls-mobile.jpg"
 import { buttonsStyleds, secondColor } from "./colors"
 import Iconcss from "../assets/svgs/css-icon-project.svg"
 import Iconhtml from "../assets/svgs/html-icon-project.svg"
@@ -24,6 +28,7 @@ interface Project {
   websiteLink: string
   repositoryLink: string
   imageUrl: string
+  mobileImgs: string
 }
 
 const projectsData: Project[] = [
@@ -36,6 +41,7 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/sports-brasil/",
     repositoryLink: "https://github.com/GabrielBerg4mini/sports-brasil",
     imageUrl: `${sportsBrasil}`,
+    mobileImgs: `${sportBrasilMobile}`,
   },
   {
     id: 2,
@@ -46,6 +52,7 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/rocketflix/",
     repositoryLink: "https://github.com/GabrielBerg4mini/rocketflix",
     imageUrl: `${rocketflix}`,
+    mobileImgs: `${rocketflixMobile}`,
   },
   {
     id: 3,
@@ -62,6 +69,7 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/energy-souls/",
     repositoryLink: "https://github.com/GabrielBerg4mini/energy-souls",
     imageUrl: `${energySouls}`,
+    mobileImgs: `${energySoulsMobile}`,
   },
   {
     id: 4,
@@ -72,6 +80,7 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/formulario/",
     repositoryLink: "https://github.com/GabrielBerg4mini/formulario",
     imageUrl: `${formulario}`,
+    mobileImgs: `${formularioMobile}`,
   },
 ]
 
@@ -258,7 +267,13 @@ const ProjectPage: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={project.imageUrl} alt={project.title} />
+                <picture>
+                  <source
+                    media="(min-width: 600px )"
+                    src={project.mobileImgs}
+                  />
+                  <img src={project.imageUrl} alt={project.title} />
+                </picture>
               </a>
             </ProjectImage>
             <ProjectContent>
