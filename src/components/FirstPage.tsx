@@ -6,7 +6,6 @@ import { motion } from "framer-motion"
 
 import { secondColor } from "./colors"
 import eu from "../assets/eu.jpg"
-import euMobile from "../assets/eu-mobile.jpg"
 import React from "react"
 
 const Container = styled.section`
@@ -270,7 +269,6 @@ const TypeWriter: React.FC = () => {
         </ContainerBiografia>
       </section>
       <section>
-        <source media="(min-width: 600px)" src={euMobile} />
         <a href="https://github.com/GabrielBerg4mini" target="_blank">
           <Img src={eu} alt="eu" />
         </a>

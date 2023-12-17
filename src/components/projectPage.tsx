@@ -7,10 +7,6 @@ import sportsBrasil from "../assets/project-sports-brasil.jpg"
 import formulario from "../assets/project-formulario.jpg"
 import rocketflix from "../assets/project-rocketflix.jpg"
 import energySouls from "../assets/project-energy-souls.jpg"
-import sportBrasilMobile from "../assets/sportsbrasil-mobile.jpg"
-import formularioMobile from "../assets/formulario-mobile.jpg"
-import rocketflixMobile from "../assets/rocketflix-mobile.jpg"
-import energySoulsMobile from "../assets/energysouls-mobile.jpg"
 import { buttonsStyleds, secondColor } from "./colors"
 import Iconcss from "../assets/svgs/css-icon-project.svg"
 import Iconhtml from "../assets/svgs/html-icon-project.svg"
@@ -268,10 +264,6 @@ const ProjectPage: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 <picture>
-                  <source
-                    media="(min-width: 600px )"
-                    src={project.mobileImgs}
-                  />
                   <img src={project.imageUrl} alt={project.title} />
                 </picture>
               </a>
