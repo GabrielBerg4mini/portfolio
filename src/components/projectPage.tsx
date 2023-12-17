@@ -24,7 +24,6 @@ interface Project {
   websiteLink: string
   repositoryLink: string
   imageUrl: string
-  mobileImgs: string
 }
 
 const projectsData: Project[] = [
@@ -37,7 +36,6 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/sports-brasil/",
     repositoryLink: "https://github.com/GabrielBerg4mini/sports-brasil",
     imageUrl: `${sportsBrasil}`,
-    mobileImgs: `${sportBrasilMobile}`,
   },
   {
     id: 2,
@@ -48,7 +46,6 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/rocketflix/",
     repositoryLink: "https://github.com/GabrielBerg4mini/rocketflix",
     imageUrl: `${rocketflix}`,
-    mobileImgs: `${rocketflixMobile}`,
   },
   {
     id: 3,
@@ -65,7 +62,6 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/energy-souls/",
     repositoryLink: "https://github.com/GabrielBerg4mini/energy-souls",
     imageUrl: `${energySouls}`,
-    mobileImgs: `${energySoulsMobile}`,
   },
   {
     id: 4,
@@ -76,7 +72,6 @@ const projectsData: Project[] = [
     websiteLink: "https://gabrielberg4mini.github.io/formulario/",
     repositoryLink: "https://github.com/GabrielBerg4mini/formulario",
     imageUrl: `${formulario}`,
-    mobileImgs: `${formularioMobile}`,
   },
 ]
 
