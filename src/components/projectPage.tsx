@@ -3,10 +3,10 @@ import "../Global.css"
 
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
-import sportsBrasil from "../assets/project-sports-brasil.jpg"
-import formulario from "../assets/project-formulario.jpg"
-import rocketflix from "../assets/project-rocketflix.jpg"
-import energySouls from "../assets/project-energy-souls.jpg"
+import sportsBrasil from "../assets/project-sports-brasil.webp"
+import formulario from "../assets/project-formulario.webp"
+import rocketflix from "../assets/project-rocketflix.webp"
+import energySouls from "../assets/project-energy-souls.webp"
 import { buttonsStyleds, secondColor } from "./colors"
 import Iconcss from "../assets/svgs/css-icon-project.svg"
 import Iconhtml from "../assets/svgs/html-icon-project.svg"
@@ -138,6 +138,7 @@ const ProjectImage = styled.section`
   border-radius: 0.2rem;
 
   img {
+    width: 100%;
     transition: all 0.3s ease-in-out;
     object-fit: cover;
     &:hover {

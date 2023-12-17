@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react"
 import { motion } from "framer-motion"
 
 import { secondColor } from "./colors"
-import eu from "../assets/eu.jpg"
+import eu from "../assets/eu.webp"
 import React from "react"
 
 const Container = styled.section`
