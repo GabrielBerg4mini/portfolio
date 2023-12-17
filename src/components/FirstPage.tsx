@@ -3,12 +3,12 @@ import { useEffect, useCallback } from "react"
 import styled from "styled-components"
 import { Github, Linkedin, Mail } from "lucide-react"
 import { motion } from "framer-motion"
-import Tooltip from "../hooks/tooltip"
+
 import { secondColor } from "./colors"
 import eu from "../assets/eu.jpg"
 import React from "react"
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100%;
   height: 100vh;
   display: flex;
@@ -18,12 +18,12 @@ const Container = styled.div`
   padding: 0.5rem;
 
   span.typed-text {
-    color: #2691e9;
+    color: #722f37;
   }
 
   h1 span.cursor {
     display: inline-block;
-    background-color: #2691e9;
+    background-color: #722f37;
     margin-left: 0.1rem;
     width: 3px;
 
@@ -38,29 +38,81 @@ const Container = styled.div`
     0%,
     49%,
     100% {
-      background-color: #2691e9;
+      background-color: #722f37;
     }
     50%,
     99% {
       background-color: transparent;
     }
   }
-`
 
+  @media (min-width: 769px) and (max-width: 1000px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 6rem;
+
+    img {
+      width: 80%;
+    }
+  }
+  @media (min-width: 520px) and (max-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  img {
+    width: 80%;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  svg {
+    width: 20px;
+  }
+  @media (max-width: 549px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+`
 const H1 = styled.h1`
   color: ${secondColor};
   font-size: 1.7rem;
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
+
+  @media (min-width: 769px) and (max-width: 1000px) {
+    font-size: 1.68rem;
+  }
+  @media (min-width: 550px) and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 549px) {
+    font-size: 1rem;
+  }
 `
 const ContainerBiografia = styled.section`
   width: 670px;
-  text-align: justify;
 
-  div {
+  p {
     font-size: 1.4rem;
     color: #181616;
+  }
+  @media (min-width: 550px) and (max-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 549px) {
+    width: 100%;
+    margin: 0 auto;
+    p {
+      font-size: 0.9rem;
+    }
   }
 `
 const LinksSocias = styled.a`
@@ -77,31 +129,27 @@ const LinksSocias = styled.a`
 `
 const Caption = styled.p`
   font-size: 1rem;
-  color: ${secondColor};
+  color: #020101;
   margin-top: 0.5rem;
 
   a {
     &:hover {
-      color: #020101;
+      color: ${secondColor};
     }
   }
 `
 
 const Img = styled.img`
-  animation: border 6s infinite ease-in-out;
-  transition: all 1s ease;
+  animation: animate 6s ease-in-out infinite;
+  transition: all 1s ease-in-out;
 
-  @keyframes border {
+  @keyframes animate {
     0%,
     100% {
-      border-radius: 12rem 8rem 20rem 15rem;
-    }
-    25%,
-    75% {
-      border-radius: 14rem 18rem 12rem 16rem;
+      border-radius: 60% 40% 30% 70%/ 60% 30% 70% 40%;
     }
     50% {
-      border-radius: 15rem 20rem 18rem 22rem;
+      border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
     }
   }
 
@@ -178,49 +226,51 @@ const TypeWriter: React.FC = () => {
           <span className="cursor">&nbsp;</span>
         </H1>
         <ContainerBiografia>
-          <motion.div
+          <motion.section
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Experiente em ReactJS, NextJS, JavaScript, Styled-Components,
-            TailwindCSS, e em constante aprendizado com Node.js, TypeScript e
-            APIs REST. Atualmente cursando Análise e Desenvolvimento de
-            Sistemas. Apaixonado pelo desenvolvimento web e sempre em busca de
-            desafios para aprimorar minhas habilidades.
-            <Tooltip text="GitHub">
+            <p>
+              Experiente em ReactJS, NextJS, JavaScript, Styled-Components,
+              TailwindCSS, e em constante aprendizado com Node.js, TypeScript e
+              APIs REST. Atualmente cursando Análise e Desenvolvimento de
+              Sistemas. Apaixonado pelo desenvolvimento web e sempre em busca de
+              desafios para aprimorar minhas habilidades.
               <LinksSocias
                 href="https://github.com/GabrielBerg4mini"
                 target="_blank"
                 data-tip="Clique para ir ao meu GitHub"
+                title="GitHub"
               >
                 <Github />
               </LinksSocias>
-            </Tooltip>
-            <Tooltip text="LinkedIn">
               <LinksSocias
                 href="https://www.linkedin.com/in/gabriel-bergamini-1424b323b/"
                 target="_blank"
+                title="LinkedIn"
               >
                 <Linkedin />
               </LinksSocias>
-            </Tooltip>
-            <Tooltip text="Email">
-              <LinksSocias href="mailto:gabrielbergaminioficial@gmail.com">
+              <LinksSocias
+                href="mailto:gabrielbergaminioficial@gmail.com"
+                title="Gmail"
+              >
                 <Mail />
               </LinksSocias>
-            </Tooltip>
+            </p>
+
             <Caption>
               <a href="mailto:gabrielbergaminioficial@gmail.com">
                 Disponível para Freelance
               </a>
             </Caption>
-          </motion.div>
+          </motion.section>
         </ContainerBiografia>
       </section>
       <section>
         <a href="https://github.com/GabrielBerg4mini" target="_blank">
-          <Img src={eu} alt="Eu" />
+          <Img src={eu} alt="eu" />
         </a>
       </section>
     </Container>

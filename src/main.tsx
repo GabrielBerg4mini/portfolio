@@ -33,9 +33,8 @@ const ContainerContent = styled.section`
 `
 const Footer = styled.footer`
   margin-top: 10rem;
-  height: 10vh;
   width: 100%;
-  background: red;
+  background: ${secondColor};
 `
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>

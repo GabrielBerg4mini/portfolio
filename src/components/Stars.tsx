@@ -42,7 +42,7 @@ const Label = styled.label`
   gap: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  background: #0e012b;
+  background: #471c22;
   opacity: 0;
   position: absolute;
   top: 0.5rem;
@@ -58,7 +58,7 @@ const Input = styled.input`
   appearance: none;
   -webkit-appearance: none;
   background-color: transparent;
-  border: 1px solid #b4afaf;
+  border: 1px solid #ebe8e8;
   border-radius: 10px;
   outline: none;
   cursor: pointer;
@@ -77,7 +77,7 @@ const Input = styled.input`
     width: 20px;
     height: 18px;
     border-radius: 50%;
-    background-color: #b4afaf;
+    background-color: #ebe8e8;
     transition: 0.3s;
   }
 

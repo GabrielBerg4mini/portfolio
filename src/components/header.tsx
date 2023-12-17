@@ -9,6 +9,12 @@ const ContainerHeaderNav = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (min-width: 501px) and (max-width: 680px) {
+    width: 80%;
+  }
+  @media (min-width: 681px) and (max-width: 900px) {
+    width: 75%;
+  }
 `
 
 const ContainerNav = styled.section`
@@ -27,7 +33,7 @@ const ContainerBackgroundNav = styled(animated.section)`
   position: absolute;
 
   margin-left: -1rem;
-  background: #6464fa97;
+  background: #722f3775;
   backdrop-filter: blur(12px);
   width: 100%;
   top: 3.5rem;
@@ -41,6 +47,21 @@ const ContainerBackgroundNav = styled(animated.section)`
 const NavLinks = styled.nav`
   font-size: 2rem;
   text-align: center;
+  @media (min-width: 769px) and (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 520px) and (max-width: 768px) {
+    font-size: 1.5rem;
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 549px) {
+    font-size: 1.2rem;
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
 `
 const Li = styled.li`
   margin-top: 1.2rem;
@@ -54,7 +75,7 @@ const BorderLink = styled.a`
   font-weight: 600;
   &:hover {
     transition: all 0.8s;
-    color: #28034b;
+    color: #722f37;
   }
 
   &:after {
@@ -64,7 +85,7 @@ const BorderLink = styled.a`
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #28034b;
+    background: #722f37;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -85,18 +106,21 @@ const ButtonLinkNav = styled.a`
   transition: all 1s;
   color: white;
   font-weight: 600;
-  background: #28034b;
+  background: #722f37;
 
   &:hover {
-    transition: all 0.8s;
-    border: 1px solid #fff;
+    transition: all 0.6s;
+    border: 1px solid #722f37;
     background: transparent;
-    color: #fff;
+    color: #722f37;
   }
 `
 const A = styled.a`
   font-size: 1.5rem;
   font-weight: 600;
+  @media (min-width: 100px) and (max-width: 500px) {
+    display: none;
+  }
 `
 const Header = () => {
   const [navVisible, setNavVisible] = useState(false)

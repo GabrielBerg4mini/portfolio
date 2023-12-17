@@ -14,6 +14,8 @@ import Iconjs from "../assets/svgs/javascript-icon-project.svg"
 import Icongit from "../assets/svgs/git-icon-project.svg"
 import Iconbootstrap from "../assets/svgs/bootstrap-icon-project.svg"
 import { ArrowRight, Github } from "lucide-react"
+import { useSpring, animated } from "react-spring"
+
 interface Project {
   id: number
   title: string
@@ -73,11 +75,11 @@ const projectsData: Project[] = [
   },
 ]
 
-const Container = styled.section`
+const Container = styled(animated.section)`
   width: 100%;
   min-height: 100vh;
   padding-top: 7rem;
-
+  overflow: hidden;
   h3 {
     text-align: center;
     color: ${secondColor};
@@ -106,6 +108,27 @@ const ProjectCard = styled.article`
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
+  @media (min-width: 769px) and (max-width: 1000px) {
+    flex-direction: column;
+    width: 100%;
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 520px) and (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 549px) {
+    flex-direction: column;
+    width: 100%;
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+  }
 `
 
 const ProjectImage = styled.section`
@@ -122,6 +145,24 @@ const ProjectImage = styled.section`
       filter: brightness(60%);
     }
   }
+  @media (min-width: 769px) and (max-width: 1000px) {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  @media (min-width: 600px) and (max-width: 768px) {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+  }
+  @media (max-width: 599px) {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
 `
 const ProjectContent = styled.article`
   width: 50%;
@@ -131,6 +172,15 @@ const ProjectContent = styled.article`
     align-items: center;
     gap: 1rem;
     margin: 0.5rem 0;
+  }
+  @media (min-width: 769px) and (max-width: 1000px) {
+    width: 80%;
+  }
+  @media (min-width: 520px) and (max-width: 768px) {
+    width: 98%;
+  }
+  @media (max-width: 549px) {
+    width: 98%;
   }
 `
 const ContainerLinks = styled.section`
@@ -143,18 +193,24 @@ const Linksite = styled.a`
   ${buttonsStyleds}
   transition:  all .4s ease-in-out;
   &:hover {
-    background: #4e4ec7;
+    background: #5c252c;
     transition: all 0.4s ease-in-out;
     transform: scale(1.02);
+  }
+  @media (max-width: 549px) {
+    margin-top: 1rem;
   }
 `
 const Linkrepositorio = styled.a`
   ${buttonsStyleds}
   transition:  all .4s ease-in-out;
   &:hover {
-    background: #4e4ec7;
+    background: #5c252c;
     transition: all 0.4s ease-in-out;
     transform: scale(1.02);
+  }
+  @media (max-width: 549px) {
+    margin-top: 1rem;
   }
 `
 
@@ -165,8 +221,33 @@ const ProjectPage: React.FC = () => {
     setProjects(projectsData)
   }, [])
 
+  const [isVisible, setIsVisible] = useState(false)
+
+  const containerProps = useSpring({
+    opacity: isVisible ? 1 : 0,
+    transform: isVisible ? "translateX(0%)" : "translateX(-100%)",
+    from: { opacity: 0, transform: "translateX(-100%)" },
+    delay: 200,
+  })
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById("projetos")
+      if (section) {
+        const rect = section.getBoundingClientRect()
+        const isVisible = rect.top < window.innerHeight && rect.bottom >= 0
+        setIsVisible(isVisible)
+      }
+    }
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
+
   return (
-    <Container id="projetos">
+    <Container id="projetos" style={containerProps}>
       <h3>Projetos</h3>
       <ContainerCards>
         {projects.map((project) => (

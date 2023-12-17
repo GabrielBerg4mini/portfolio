@@ -18,7 +18,7 @@ import { useEffect, useState } from "react"
 
 const ContainerPrincipal = styled(animated.section)`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   align-content: center;
   overflow: hidden;
@@ -45,6 +45,7 @@ const SectionIconSkills = styled.section`
   display: grid;
   justify-items: center;
   align-content: center;
+
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.2rem;
@@ -52,7 +53,8 @@ const SectionIconSkills = styled.section`
   width: 120px;
   height: 130px;
   border-bottom: 4px solid #313131;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
   p {
     color: #313131;
     font-weight: 600;
@@ -63,9 +65,38 @@ const SectionIconSkills = styled.section`
   }
 
   &:hover {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: scale(1.05);
     border-bottom: 2px solid #313131;
+  }
+  @media (min-width: 769px) and (max-width: 1000px) {
+    width: 100px;
+    height: 110px;
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+  @media (min-width: 520px) and (max-width: 768px) {
+    width: 100px;
+    height: 110px;
+    p {
+      font-size: 0.7rem;
+    }
+    img {
+      width: 2.5rem;
+    }
+  }
+  @media (max-width: 549px) {
+    width: 90px;
+    height: 100px;
+
+    p {
+      font-size: 0.7rem;
+    }
+    img {
+      width: 2rem;
+    }
   }
 `
 
@@ -74,7 +105,7 @@ const Skills = () => {
 
   const containerProps = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? "translateX(0%" : "translate(-100%)",
+    transform: isVisible ? "translateX(0%)" : "translateX(-100%)",
     from: { opacity: 0, transform: "translateX(-100%)" },
     delay: 200,
   })
