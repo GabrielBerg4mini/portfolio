@@ -1,5 +1,14 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../src/assets/fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: bold;
+  src: url("../src/assets/fonts/Poppins-Bold.ttf");
+}
 :root {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,6 +33,14 @@ body {
 }
 a {
   color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
 }
 
 .starfield {

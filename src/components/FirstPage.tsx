@@ -82,7 +82,7 @@ const H1 = styled.h1`
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
-
+  
   @media (min-width: 769px) and (max-width: 1000px) {
     font-size: 1.68rem;
   }
