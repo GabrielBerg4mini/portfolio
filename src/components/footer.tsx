@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Section = styled.section`
   width: 100%;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   h5 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -45,6 +45,10 @@ const Article = styled.section`
     }
   }
 `
+const Hr = styled.hr`
+  margin: 1rem 0;
+`
+
 const FooterContainer = () => {
   return (
     <Section>
@@ -69,6 +73,10 @@ const FooterContainer = () => {
           <span>E-mail</span> gabrielbergaminioficial@gmail.com
         </a>
       </Article>
+      <Hr />
+      <article>
+        <p>Gabriel Bergamini© All Rights Reserved</p>
+      </article>
     </Section>
   )
 }
