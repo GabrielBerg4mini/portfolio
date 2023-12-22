@@ -49,17 +49,10 @@ const Container = styled.section`
     flex-direction: column-reverse;
     justify-content: center;
     padding-top: 6rem;
-
-    img {
-      width: 80%;
-    }
   }
   @media (min-width: 520px) and (max-width: 768px) {
     flex-direction: column-reverse;
     justify-content: center;
-  }
-  img {
-    width: 80%;
   }
 
   p {
@@ -152,8 +145,20 @@ const Caption = styled.p`
 const Img = styled.img`
   animation: animate 6s ease-in-out infinite;
   transition: all 1s ease-in-out;
-  width: 100%;
-  height: 100%;
+  width: 280px;
+  height: 340px;
+  @media (min-width: 769px) and (max-width: 1000px) {
+    width: 280px;
+    height: 340px;
+  }
+  @media (min-width: 520px) and (max-width: 768px) {
+    width: 240px;
+    height: 310px;
+  }
+  @media (max-width: 549px) {
+    width: 220px;
+    height: 290px;
+  }
   @keyframes animate {
     0%,
     100% {

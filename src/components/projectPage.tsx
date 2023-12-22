@@ -138,8 +138,8 @@ const ProjectImage = styled.section`
   border-radius: 0.2rem;
 
   img {
-    width: 100%;
-    height: 100%;
+    width: 580px;
+    height: 300px;
     transition: all 0.3s ease-in-out;
     object-fit: cover;
     &:hover {
@@ -147,15 +147,30 @@ const ProjectImage = styled.section`
       filter: brightness(60%);
     }
   }
+  @media (min-width: 1001px) and (max-width: 1182px) {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   @media (min-width: 769px) and (max-width: 1000px) {
     width: 100%;
     display: grid;
     justify-content: center;
+
+    img {
+      width: 580px;
+      height: 300px;
+    }
   }
   @media (min-width: 600px) and (max-width: 768px) {
     width: 100%;
     display: grid;
     justify-content: center;
+    img {
+      width: 580px;
+      height: 300px;
+    }
   }
   @media (max-width: 599px) {
     width: 100%;
@@ -163,6 +178,7 @@ const ProjectImage = styled.section`
     justify-content: center;
     img {
       width: 100%;
+      height: 100%;
     }
   }
 `
