@@ -33,6 +33,9 @@ const ContainerButtonStopStars = styled.section`
       transition: transform 0.8s;
     }
   }
+  @media (max-width: 549px) {
+    top: 20px;
+  }
 `
 
 const Label = styled.label`
