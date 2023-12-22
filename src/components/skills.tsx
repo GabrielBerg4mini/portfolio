@@ -23,9 +23,6 @@ const ContainerPrincipal = styled(animated.section)`
   align-content: center;
   overflow: hidden;
   padding: 0.5rem;
-  @media (max-width: 549px) {
-    overflow: visible;
-  }
 `
 
 const H2 = styled.h2`
