@@ -111,6 +111,7 @@ const Skills = () => {
   })
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const handleScroll = () => {
       const section = document.getElementById("habilidades")
       if (section) {
@@ -120,20 +121,12 @@ const Skills = () => {
       }
     }
 
-    const isMobile = window.innerWidth <= 600
-    if (isMobile) {
-      document.body.style.overflow = isVisible ? "hidden" : "visible"
-    }
-
     window.addEventListener("scroll", handleScroll)
 
     return () => {
       window.removeEventListener("scroll", handleScroll)
-      if (isMobile) {
-        document.body.style.overflow = "visible"
-      }
     }
-  }, [isVisible])
+  }, [])
 
   return (
     <ContainerPrincipal id="habilidades" style={containerProps}>
