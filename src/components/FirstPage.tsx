@@ -146,7 +146,7 @@ const Img = styled.img`
   animation: animate 6s ease-in-out infinite;
   transition: all 1s ease-in-out;
   width: 280px;
-  height: 340px;
+  height: 320px;
   @media (min-width: 769px) and (max-width: 1000px) {
     width: 280px;
     height: 340px;
