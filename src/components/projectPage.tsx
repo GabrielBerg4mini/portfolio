@@ -139,6 +139,7 @@ const ProjectImage = styled.section`
 
   img {
     width: 100%;
+    height: 100%;
     transition: all 0.3s ease-in-out;
     object-fit: cover;
     &:hover {

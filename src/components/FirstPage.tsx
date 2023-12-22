@@ -2,7 +2,6 @@ import "../Global.css"
 import { useEffect, useCallback } from "react"
 import styled from "styled-components"
 import { Github, Linkedin, Mail } from "lucide-react"
-import { motion } from "framer-motion"
 
 import { secondColor } from "./colors"
 import eu from "../assets/eu.webp"
@@ -82,7 +81,7 @@ const H1 = styled.h1`
   letter-spacing: 0.1rem;
   text-align: center;
   overflow: hidden;
-  
+
   @media (min-width: 769px) and (max-width: 1000px) {
     font-size: 1.68rem;
   }
@@ -95,7 +94,10 @@ const H1 = styled.h1`
 `
 const ContainerBiografia = styled.section`
   width: 670px;
-
+  text-align: justify;
+  svg {
+    width: 30px;
+  }
   p {
     font-size: 1.4rem;
     color: #181616;
@@ -103,6 +105,10 @@ const ContainerBiografia = styled.section`
   @media (min-width: 550px) and (max-width: 768px) {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+    svg {
+      width: 22px;
+    }
     p {
       font-size: 1rem;
     }
@@ -110,6 +116,10 @@ const ContainerBiografia = styled.section`
   @media (max-width: 549px) {
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+    svg {
+      width: 20px;
+    }
     p {
       font-size: 0.9rem;
     }
@@ -142,7 +152,8 @@ const Caption = styled.p`
 const Img = styled.img`
   animation: animate 6s ease-in-out infinite;
   transition: all 1s ease-in-out;
-
+  width: 100%;
+  height: 100%;
   @keyframes animate {
     0%,
     100% {
@@ -226,11 +237,7 @@ const TypeWriter: React.FC = () => {
           <span className="cursor">&nbsp;</span>
         </H1>
         <ContainerBiografia>
-          <motion.section
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+          <section>
             <p>
               Experiente em ReactJS, NextJS, JavaScript, Styled-Components,
               TailwindCSS, e em constante aprendizado com Node.js, TypeScript e
@@ -265,7 +272,7 @@ const TypeWriter: React.FC = () => {
                 Disponível para Freelance
               </a>
             </Caption>
-          </motion.section>
+          </section>
         </ContainerBiografia>
       </section>
       <section>
