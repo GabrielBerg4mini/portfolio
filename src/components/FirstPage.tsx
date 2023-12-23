@@ -82,7 +82,7 @@ const H1 = styled.h1`
     font-size: 1.4rem;
   }
   @media (max-width: 549px) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `
 const ContainerBiografia = styled.section`
@@ -114,7 +114,7 @@ const ContainerBiografia = styled.section`
       width: 20px;
     }
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 `
@@ -156,8 +156,8 @@ const Img = styled.img`
     height: 310px;
   }
   @media (max-width: 549px) {
-    width: 220px;
-    height: 290px;
+    width: 200px;
+    height: 250px;
   }
   @keyframes animate {
     0%,
