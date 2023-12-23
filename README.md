@@ -7,13 +7,13 @@
 ### result DeskTop:
 
 <p align="center">
-    <img width="600" src="./src/assets/readme-imgs/gif-desktop.gif">
+    <img width="600" src="./src/assets/readme-imgs/desktop.png">
 </p>
 
 ### result Mobile:
 
 <p align="center">
-    <img width="460" src="./src/assets/readme-imgs/gif-mobile.gif">
+    <img width="460" src="./src/assets/readme-imgs/mobile.png">
 </p>
 
 ## Project developed with ReactJs, TypeScript, Styled Components and Git .
