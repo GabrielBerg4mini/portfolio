@@ -145,8 +145,8 @@ const Caption = styled.p`
 const Img = styled.img`
   animation: animate 6s ease-in-out infinite;
   transition: all 1s ease-in-out;
-  width: 280px;
-  height: 320px;
+  width: 300px;
+  height: 400px;
   @media (min-width: 769px) and (max-width: 1000px) {
     width: 280px;
     height: 340px;
