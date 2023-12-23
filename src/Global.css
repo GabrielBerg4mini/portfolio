@@ -1,14 +1,16 @@
 @font-face {
   font-family: "Poppins";
   src: url("../src/assets/fonts/Poppins-Medium.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Poppins";
   font-weight: bold;
   src: url("../src/assets/fonts/Poppins-Bold.ttf");
+  font-display: swap;
 }
 :root {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
