@@ -16,9 +16,6 @@ const PreloadContainer = styled.section`
   align-items: center;
   gap: 1rem;
   z-index: 9999;
-  @media (max-width: 768px) {
-    background-color: #e7e6e6;
-  }
 `
 const Img = styled.img`
   width: 18rem;

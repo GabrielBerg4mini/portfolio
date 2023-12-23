@@ -227,10 +227,20 @@ const TypeWriter: React.FC = () => {
       if (cursorSpan) cursorSpan.classList.remove("typing")
       setTimeout(erase, newTextDelay)
     }
-  }, [charIndex, textArray, textArrayIndex, typingDelay, erase, newTextDelay])
+  }, [charIndex, textArray, textArrayIndex, typingDelay, newTextDelay, erase])
 
   useEffect(() => {
-    if (textArray.length) setTimeout(type, newTextDelay + 250)
+    const timeoutIds: NodeJS.Timeout[] = []
+
+    const clearAllTimeouts = () => {
+      timeoutIds.forEach((timeoutId) => clearTimeout(timeoutId))
+    }
+
+    if (textArray.length) {
+      timeoutIds.push(setTimeout(type, newTextDelay + 250))
+    }
+
+    return clearAllTimeouts
   }, [type, textArray.length, newTextDelay])
 
   return (
