@@ -36,7 +36,7 @@ const projectsData: Project[] = [
       "Feed de noticia desenvolvido junto com o curso da Rocketseat, Nesse projeto dei um salto de conhecimentos sobre ReactJs, aprendi a usar props/desestruturação e usar as propriedades de outro componente. Entre outros conhecimentos valiosos para o meu crescimento como Desenvolvedor Web.",
     iconsImgs: [`${IconReact}`,`${Iconjs}`, `${Iconhtml}`, `${Iconcss}`, `${Icongit}`],
     websiteLink: "https://ignite-feed-gabrielbergamini.vercel.app",
-    repositoryLink: "https://github.com/GabrielBerg4mini/sports-brasil",
+    repositoryLink: "https://github.com/GabrielBerg4mini/ignite-feed",
     imageUrl: `${IgniteFeed}`,
   },
   {
